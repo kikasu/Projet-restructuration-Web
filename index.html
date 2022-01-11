@@ -5,14 +5,14 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
 
-	<title>Obsevatoir Rouen</title>
+	<title>Observatoire De Rouen</title>
 
-	<link href="style.css" rel="stylesheet" type="text/css" />
+	<link href="main.css" rel="stylesheet" type="text/css" />
 	<script src="script.js" defer>
 
 	</script>
 
-	<META HTTP-EQUIV="Refresh" CONTENT="30; URL=https://projet-restructuration-web.geotroll.repl.co/">
+	<!-- <META HTTP-EQUIV="Refresh" CONTENT="30; URL=https://projet-restructuration-web.geotroll.repl.co/"> -->
 
 </head>
 
@@ -34,12 +34,12 @@
          <div class="deroulant">
           <button class="bouton">Les Activités</button>
           <div class="contenu-bouton">
-            <a href="#">Nouveautés</a>
+            <!-- <a href="#">Nouveautés</a> -->
             <a href="#">Galerie</a>
-            <a href="#">Articles</a>
-            <a href="#">Agenda</a>
-            <a href="#">Archives</a>
-            <a href="#">Éphémérides</a>
+            <!-- <a href="#">Articles</a> -->
+            <!-- <a href="#">Agenda</a> -->
+            <!-- <a href="#">Archives</a> -->
+            <!-- <a href="#">Éphémérides</a> -->
           </div>
         </div>
 
@@ -48,29 +48,129 @@
 
           <div class="contenu-bouton">
             <a href="#">Nous contacter</a>
-            <a href="#">Questions</a>
+            <!-- <a href="#">Questions</a> -->
            <a href="#">Liens</a>
           </div>
         </div>
         
       </nav>
           
-      <!-- <div id="Menu">
-        <div class="deroulant" id="menuDeroulant">
-        <img src="logoMenu.png" alt="Logo Menu">
-      </div> -->
+        <div id="indicateur">
+            <h2>ACCUEIL</h2>
+      </div>
       
     </header>
 
     <section>
-      <h1>L'OBSERVATOIRE ASTRONOMIQUE DE ROUEN</h1>
-      <h3>  Vous souhaîtes une bonne année 2022</h2>
+        <div id="photoAutour">
+            <div id="photoFond">
+                    
+                <h1>L'OBSERVATOIRE ASTRONOMIQUE DE ROUEN</h1>
+                <h3>  Vous souhaîtes une bonne année 2022</h2>
+
+
+                    <div id="presentation">
+                        <h5 id="txtPresentation">
+                            Bienvenue sur le site de l'Observatoire Astronomique de Rouen, association animée uniquement par des bénévoles, reconnue d'intérêt général, agréée Jeunesse et Education Populaire et soutenue par la Ville de Rouen.
+
+                            Devenez membre de l'Observatoire pour participer à nos réunions hebdomadaires du samedi soir à 21h 30 (observations si la météo le permet, exposés, discussions)
+                            
+                            Cotisations annuelles bénéficiant d'une réduction fiscale de 66%: 35 euros (plein tarif) ou 17,5 euros (tarif réduit pour les étudiants) 
+                        </h5>
+                    </div>
+
+            </div>
+        </div>
+        <br>
+
+        <h2>Photos réalisées en 2021 :</h2>
+        <div id="divPhoto">
+            
+            <div class="slider">
+                <div class="slides">
+                    <div class="slide"><img src="Jupiter.jpg" alt=""></img></div>
+                    <div class="slide"><img src="GalaxieSpirale.jpg" alt=""></div>
+                    <div class="slide"><img src="GalaxieSpirale2.jpg" alt=""></div>
+                </div>
+            </div>
+
+
+        </div>
+
+        
+
+        <div id="compartimentIMRD">
+            <div id="divInfoSeance">
+                <div id="infoSeance">
+                    <h2>INFORMATION SÉANCE</h2>
+                    <p id="txtIS">Prochaine séance publique le :<br>-samedi 5 février 2022 à 21h 30 <br>-uniquement sur réservation par mail<br>-Passe sanitaire obligatoire <br>-Masque obligatoire à l'intérieur du local <br>-Entrée: 5 euros en individuel <br>-10 euros par famille (quel que soit le nombre de personnes).
+
+                       <br><br> Il n'y a plus de places disponibles pour la séance du samedi 5 février 2022, ni pour celles des samedis 5 mars et 2 avril.
+                        
+                        <br>La prochaine séance avec des places disponibles aura lieu le samedi 7 mai  à 21h 30.</p>
+                </div>
+            </div>
+
+            <div id="meteoRDV">
+                <div id="meteo">
+                    <h2>Météo :</h2>
+                    <!-- <p>Afin de savoir si le ciel sera-t-il dégagé cette nuit</p>
+                    <a href="https://en.sat24.com/en" target="_blank"><img src="Téléscope+nuage.png"></a> -->
+                    <iframe id="widget_autocomplete_preview" src="https://meteofrance.com/widget/prevision/765400"> </iframe>
+                    
+                </div>
+                <div id="RDV">
+                    <h2>Prenez rendez-vous :</h2>
+                    <p>Merci de bien vouloir effectuer vos demandes de rendez-vous, et de réceptions de classes ou de groupes uniquement par mail: 
+                        <br>observatoire.populaire.rouen@orange.fr</p>
+                </div>
+            </div>
+
+            <div id="divDocu">
+                <div id="docu">
+                    <h2>Documentation</h2>
+                    <ul>
+                        <a class="docu" href="http://astrosurf.com/obsrouen/astronomiegenerale.pdf" target="_blank"><li>-Astronomie général</li></a>
+                        <br>
+                        <a class="docu" href="http://astrosurf.com/obsrouen/preslunef.pdf" target="__blank"><li>-Petit guide lunaire</li></a>
+                    </ul>
+                    <h2>Archives</h2>
+                    
+                    <ul>
+                        <a class="docu" href="http://astrosurf.com/obsrouen/ecl160808.doc"><li>-Éclipse partielle de Lune du 16 août 2008</li></a>
+                        <br>
+                        <a class="docu" href="http://astrosurf.com/obsrouen/ecl10808.doc"><li>-Éclipse partielle de Lune du 1 août 2008</li></a>
+                        <br>
+                        <a class="docu" href="http://astrosurf.com/obsrouen/21fevrier2008.doc"><li>-Éclipse de Lune du 21 février 2008</li></a>
+                        <br>
+                        <a class="docu" href="http://astrosurf.com/obsrouen/3mars2007.doc"><li>-Éclipse de Lune du 3 mars 2007</li></a>
+                        <br>
+                        <a class="docu" href=""><li><strong>-Plus d'archives...</strong></li></a>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
     </section>
 
     <footer>
-      <a href="https://www.instagram.com/observatoirederouen/" target="_bank"><img src="LogoInstaBlack.png" alt="Logo Instagram"/></a>
+        <div>
+            <a href="https://www.instagram.com/observatoirederouen/" target="_bank"><img src="LogoInstaBlack.png" alt="Logo Instagram"/></a>
+        </div>
+        <div>
+            <h3>
+                Aidez-nous !
+            </h3>
+            <p>Avec dons déductibles d'impots</p>
+        </div>
+        <div id="contact">
+            <p>Nous contacter : <br>
+                0235880196<br>
+                <a id="email" href="mailto:obs.rouen@club-internet.fr">obs.rouen@club-internet.fr</a>
 
-      <p>Nous contacter : <a href="mailto:obs.rouen@club-internet.fr">obs.rouen@club-internet.fr</a></p>
+            </p>
+        </div>
     </footer> 
   </body>
 </html>
