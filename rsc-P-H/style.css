@@ -1,0 +1,10 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #fff;
+
+    background-color: #121212;
+}
+
+section article{
+    border: solid 1px red;
+}
