@@ -1,10 +1,26 @@
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: #fff;
+    color: #000;
 
-    background-color: #121212;
+
 }
 
-section article{
-    border: solid 1px red;
+article {
+    display: flex;
+    flex-flow: row nowrap;
+}
+.slide {
+    border: solid 2px #000;
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        color: #fff;
+
+        background-color: #121212;
+    }
+
+    .slide {
+        border: solid 2px #fff;
+    }
 }
