@@ -5,6 +5,7 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=corner"/>
 
+        <link rel="stylesheet" href="./style.css"/>
         <link rel="stylesheet" href="./rsc-P-H/style.css"/>
 
         <script src="./rsc-P-H/script.js" defer></script>
@@ -14,12 +15,55 @@
     </head>
 
     <body>
-        <section>
+        <header>
+
+            <img id="logoMenu" src="./img/logoMenu.png">
+            <img id="logo" src="./img/Logo.png">
+
+            <nav>
+
+                <div class="deroulant">
+
+                    <button class="bouton">L'observatoire</button>
+                    <div class="contenu-bouton">
+
+                        <a href="#">Accueil</a>
+                        <a href="#">Présentation</a>
+                    </div>
+                </div>
+
+                <div class="deroulant">
+
+                    <button class="bouton">Les Activités</button>
+                    <div class="contenu-bouton">
+
+                        <a href="#">Nouveautés</a>
+                        <a href="#">Galerie</a>
+                        <a href="#">Articles</a>
+                        <a href="#">Agenda</a>
+                        <a href="#">Archives</a>
+                        <a href="#">Éphémérides</a>
+                    </div>
+                </div>
+
+                <div class="deroulant" id="contacts">
+
+                    <button class="bouton">Nous Contacter</button>
+                    <div class="contenu-bouton">
+
+                        <a href="#">Nous contacter</a>
+                        <a href="#">Questions</a>
+                        <a href="#">Liens</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main>
 
             <h1>Présentation de l'Observatoire de Rouen</h1>
 
-            <article>
-                <div>
+            <section>
+                <article>
                     <p>
                         Les buts premiers de l'association (loi 1901) sont la vulgarisation de l'Astronomie et l'étude scientifique des phénomènes célestes.
                     </p>
@@ -27,9 +71,10 @@
                         Nous recevons le public le premier samedi de chaque mois à partir de 21h30: à cet effet, 
                         l'observatoire s'est doté d'un planétarium GOTO EX-3, outil pédagogique qui remporte un grand succès. 
                         Nous recevons également, avec participation financière, des groupes et classes de tous niveaux. 
-
-                        Enfin l'Observatoire ouvre ses portes à l'occasion de phénomènes astronomiques exceptionnels : 
-                        éclipses, comètes brillantes, nuit des étoiles etc.....
+                    </p>
+                    <p>
+                        L'Observatoire ouvre ses portes à l'occasion de phénomènes astronomiques exceptionnels : 
+                        éclipses, comètes brillantes, nuit des étoiles etc...
                     </p>
                     <p>
                         Mais l'on peut également choisir de venir partager sa passion pour l'astronomie en devenant membre de l'Observatoire. 
@@ -38,21 +83,29 @@
                         L'adhésion donne accès aux séances d'observation à Rouen et à la campagne, 
                         à la bibliothèque, à la réception du bulletin et aux différentes activités tous les samedis soir à partir de 21h30.
                     </p>
+                </article>
+                <div class="static">
+                    <div>
+                        <img src="./rsc-P-H/p.1-static-gotoex3.jpg" alt="GOTO EX3"/>
+                    </div>
+
+                    <p>Planétarium</p>
                 </div>
-            </article>
-            <article>
-                <div>
+            </section>
+            <section>
+                <article>
                     <p>
                         Outre la lunette de 160mm, nous disposons de plusieurs instruments d'observation 
-                        dont un télescope de 300mm et un télescope Meade de 254mm. 
-
+                        dont un télescope de 300mm et un télescope Meade de 254mm.
+                    </p>
+                    <p>
                         Ce télescope Meade a été remplacé en 2019 par un télescope Célestron 11 de 280mm, 
                         muni d'une caméra Atik 460EX.
                     </p>
                     <p>
                         Nous observons et photographions également le ciel profond à la campagne avec un télescope de 260mm.
                     </p>
-                </div>
+                </article>
                 <div class="slide">
                     <div>
                         <button onclick="doSlide('p_slide_l_t-0')"><</button>
@@ -64,8 +117,8 @@
 
                     <p>La collection de lunettes et téléscopes</p>
                 </div>
-            </article>
-        </section>
+            </section>
+        </main>
 
     </body>
 </html>
