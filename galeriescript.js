@@ -47,9 +47,9 @@ function setPageSelector()
 {
     if(filtredImg.length >= 5)
     {
-        let numbrePage = Math.floor(filtredImg.length / 6);
+        let numbrePage = numOfPage();
         let inHtml = '<button id="pagePlus" onclick="affichage(page + 1)"><</button>';
-        for(let i = 0; i > numbrePage; i++)
+        for(let i = 0; i < numbrePage; i++)
         {
             inHtml += '<button id="page"'+i+' onclick="affichage('+i+')">' + (i + 1) +'</button>'
         }
@@ -60,6 +60,11 @@ function setPageSelector()
 }
 function affichage(numP)
 {
+    let numOP = numOfPage() -1;
+    if(numP > numOP)
+        numP = 0;
+    else if(numP < 0)
+        numP = numOP;
     let n = 6*numP;
     for(let i = 0; i < 6; i++)
     {
@@ -78,4 +83,12 @@ function affichage(numP)
         }
     }
     page = numP;
+}
+function numOfPage()
+{
+    let r = Math.floor(filtredImg.length / 6)
+    if(r == filtredImg.length / 6)
+        return r;
+    else
+        return r + 1;
 }
