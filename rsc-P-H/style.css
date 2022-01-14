@@ -12,8 +12,30 @@ section {
       justify-content: space-between;
       gap: 10px;
 }
+section a {
+    color: #fff;
+}
+section a:hover {
+    color: #aaa;
+}
+section ul {
+    display: flex;
+        flex-flow: column;
+        gap: 5px;
+}
 section article {
     width: 75%;
+}
+section article div {
+    display: flex;
+        gap: 20px;
+}
+section article div img {
+    max-width: 15%;
+}
+
+.sub_article {
+    margin-top: 40px;
 }
 
 .static, .slide {
