@@ -1,0 +1,7 @@
+#Gaffichage{
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+}
+#Gaffichage div img{
+    width: 100%;
+}

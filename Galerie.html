@@ -5,12 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Galerie</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="galerieStyle.css">
     <script src="galeriescript.js"></script>
 </head>
 <body>
-    <section id="galerie">
-      <div id="Gselection">
+    <main id="galerie">
+      <section id="Gselection">
         <div>
           <div class="Pselection" id="soleil" onclick="setSFiltre(0)">SOLEIL</div>
           <div class="Pselection" id="lune" onclick="setSFiltre(1)">LUNE</div>
@@ -25,8 +25,8 @@
         </div>
         <div id="GsousSelection">
         </div>
-      </div>
-      <div id="Gaffichage">
+      </section>
+      <section id="Gaffichage">
         <div>
           <img id="image0" src="" alt="">
           <p id="desc0"></p>
@@ -51,10 +51,10 @@
           <img id="image5" src="" alt="">
           <p id="desc5"></p>
         </div>
-      </div>
-      <div id="GpageSel">
+      </section>
+      <section id="GpageSel">
         
-      </div>
-    </section>
+      </section>
+    </main>
 </body>
 </html>
