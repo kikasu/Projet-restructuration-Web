@@ -14,6 +14,7 @@ section {
 }
 section a {
     color: #fff;
+    text-decoration: underline;
 }
 section a:hover {
     color: #aaa;
@@ -74,6 +75,46 @@ section article div img {
 }
 .slide button:hover {
     background-color: #fff4;
+}
+
+#journal {
+    color: #fff;
+    text-decoration: underline;
+}
+#journal:hover {
+    color: #aaa;
+}
+#journal_img {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+
+    padding: 25% 50%;
+
+    display: none;
+}
+#journal_img.active {
+    background-color: #0008;
+    display: block;
+}
+#journal img {
+    position: absolute;
+    top: 1%;
+    left: 10%;
+
+    width: 80%;
+}
+
+#caron_photos {
+    display: flex;
+        flex-flow: wrap;
+        justify-content: center;
+}
+#caron_photos img {
+    padding: 1px;
+
+    border: solid 2px #fff;
 }
 
 

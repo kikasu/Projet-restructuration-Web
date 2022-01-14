@@ -67,7 +67,7 @@
                 <article>
                     <p>
                         L'Observatoire Astronomique de Rouen a été fondé en 1884 à l'initiative de <a href="">Ludovic Gully</a>, professeur de mathématique à Rouen.
-                        Voici un extrait du <a href="">journal de Rouen daté du 1er décembre 1884</a> et relatant cette fondation.
+                        Voici un extrait du <span id="journal" onclick="journalToggle()">journal de Rouen daté du 1er décembre 1884<span id="journal_img"><img src="./rsc-P-H/h.1.1-click-article_Journal-fondation_Obs.jpg" alt="Ludovic Gully"/></span></span> et relatant cette fondation.
                     </p>
                     <p class="sub_article">
                         Dès sa création, des observateurs talentueux comme <a href="">Georges Caron</a>, 
@@ -75,11 +75,15 @@
                         fixe sur pellicule des phénomènes célestes exceptionnels comme le passage de "la comète de Halley", 
                         "l'éclipse perlée du 17 avril 1912" ou "la comète Morehouse(1908c)".
                     </p>
-                    <div>
-                        <img src="./rsc-P-H/h.2.0-slide-halley1910.jpg" alt="Comète de Halley - 30 Juin 1910"/>
-                        <img src="./rsc-P-H/h.2.1-slide-eclipse1912.jpg" alt="Eclipse perlée - 17 Avril 1912 - #1"/>
-                        <img src="./rsc-P-H/h.2.2-slide-eclipse1912.jpg" alt="Eclipse perlée - 17 Avril 1912 - #2"/>
-                        <img src="./rsc-P-H/h.2.3-slide-cometemorehouse.png" alt="Comète Morehouse(1908c) - 1908"/>
+                    <div id="caron_photos">
+                        <img onclick="slide_photo_caron(0)" src="./rsc-P-H/h.2.0-slide-halley1910.jpg" alt="Comète de Halley - 30 Juin 1910"/>
+                        <img onclick="slide_photo_caron(1)" src="./rsc-P-H/h.2.1-slide-eclipse1912.jpg" alt="Eclipse perlée - 17 Avril 1912 - #1"/>
+                        <img onclick="slide_photo_caron(2)" src="./rsc-P-H/h.2.2-slide-eclipse1912.jpg" alt="Eclipse perlée - 17 Avril 1912 - #2"/>
+                        <img onclick="slide_photo_caron(3)" src="./rsc-P-H/h.2.3-slide-cometemorehouse.png" alt="Comète Morehouse(1908c) - 1908"/>
+
+                        <div id="slide_photo_caron">
+                            <img id="slide_photo_caron_img" onclick="slide_photo_caron()" src="" alt=""/>
+                        </div>
                     </div>
                 </article>
 
@@ -192,7 +196,7 @@
 
         <footer>
             <a href="https://www.instagram.com/observatoirederouen/" target="_bank">
-                <img src="./img/LogoInsta.png" alt="Logo Instagram"/>
+                <img src="./img/LogoInstaWhite.png" alt="Logo Instagram"/>
             </a>
             <nav>
                 <p>Nous contacter : </p>
