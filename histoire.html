@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=corner"/>
 
         <link rel="stylesheet" href="./style.css"/>
-        <link rel="stylesheet" href="./rsc-P-H/style.css"/>
+        <link rel="stylesheet" href="./rsc-P-H/style_h.css"/>
 
         <script src="./rsc-P-H/script.js" defer></script>
 
@@ -80,12 +80,21 @@
                         <img onclick="slide_photo_caron(1)" src="./rsc-P-H/h.2.1-slide-eclipse1912.jpg" alt="Eclipse perlée - 17 Avril 1912 - #1"/>
                         <img onclick="slide_photo_caron(2)" src="./rsc-P-H/h.2.2-slide-eclipse1912.jpg" alt="Eclipse perlée - 17 Avril 1912 - #2"/>
                         <img onclick="slide_photo_caron(3)" src="./rsc-P-H/h.2.3-slide-cometemorehouse.png" alt="Comète Morehouse(1908c) - 1908"/>
-
-                        <div id="slide_photo_caron">
-                            <img id="slide_photo_caron_img" onclick="slide_photo_caron()" src="" alt=""/>
-                        </div>
                     </div>
                 </article>
+                <div class="slide" id="slide_photo_caron">
+                    <div>
+                        <button class="prec_arrow" onclick="slide_photo_caron('<')">
+                            <img src="./img/arrow.png" alt="Precedent"/>
+                        </button>
+
+                        <img id="slide_photo_caron_img" onclick="slide_photo_caron()" src="" alt=""/>
+
+                        <button class="next_arrow" onclick="slide_photo_caron('>')">
+                            <img src="./img/arrow.png" alt="Suivant"/>
+                        </button>
+                    </div>
+                </div>
 
                 <div class="static">
                     <div>
@@ -106,9 +115,15 @@
 
                 <div class="slide">
                     <div>
-                        <button onclick="doSlide('h_slide_arc-0')"><</button>
+                        <button class="prec_arrow" onclick="doSlide('h_slide_arc-0')">
+                            <img src="./img/arrow.png" alt="Precedent"/>
+                        </button>
+
                         <img src="" alt=""/>
-                        <button onclick="doSlide('h_slide_arc-1')">></button>
+
+                        <button class="next_arrow" onclick="doSlide('h_slide_arc-1')">
+                            <img src="./img/arrow.png" alt="Suivant"/>
+                        </button>
                     </div>
 
                     <p id="h_slide_arc_text">Err.</p>

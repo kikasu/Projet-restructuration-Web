@@ -49,14 +49,15 @@ section article div img {
     text-align: center;
 }
 .static div, .slide div {
-    border-bottom: solid 2px #fff;
+    min-height: 80px;
+
+    border-bottom: solid 1px #fff;
 
     display: flex;
         flex-flow: nowrap;
 }
 .static img, .slide img {
     width: 100%;
-    min-height: 80px;
 
     background-image: url("../img/noImg.gif");
     background-size: 80%;
@@ -68,10 +69,13 @@ section article div img {
 }
 .slide button {
     width: 8%;
-    border: solid 1px #fff;
+    border: none;
 
     background: none;
     background-color: #fff2;
+}
+.slide button img {
+    background: none;
 }
 .slide button:hover {
     background-color: #fff4;
@@ -116,6 +120,11 @@ section article div img {
 
     border: solid 2px #fff;
 }
+
+
+
+
+
 
 
 

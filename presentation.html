@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=corner"/>
 
         <link rel="stylesheet" href="./style.css"/>
-        <link rel="stylesheet" href="./rsc-P-H/style.css"/>
+        <link rel="stylesheet" href="./rsc-P-H/style_p.css"/>
 
         <script src="./rsc-P-H/script.js" defer></script>
 
@@ -106,17 +106,107 @@
                     <p>
                         Nous observons et photographions également le ciel profond à la campagne avec un télescope de 260mm.
                     </p>
-                </article>
-                <div class="slide">
-                    <div>
-                        <button onclick="doSlide('p_slide_l_t-0')"><</button>
-                        <img id="p_slide_l_t" src="" alt=""/>
-                        <button onclick="doSlide('p_slide_l_t-1')">></button>
-                    </div>
 
-                    <p>La collection de lunettes et téléscopes</p>
-                </div>
+                    <div class="allContainer">
+                        <div class="container">
+                            <div class="carousel">
+                                <input type="radio" name="slides" checked="checked" id="slide-1">
+                                <input type="radio" name="slides" id="slide-2">
+                                <input type="radio" name="slides" id="slide-3">
+                                <input type="radio" name="slides" id="slide-4">
+                                <input type="radio" name="slides" id="slide-5">
+                                <input type="radio" name="slides" id="slide-6">
+            
+                                <ul class="carousel__slides">
+                                    <li class="carousel__slide">
+                                        <figure>
+                                            <div><img src="./rsc-P-H/p.2.0-slide-l110-130.jpg" alt=""></div>
+            
+                                            <figcaption><h3>1 Err.</h3>
+                                                <p>
+                                                    Err.
+                                                    <span class="credit">Err.</span>
+                                                </p>
+                                            </figcaption>
+                                        </figure>
+                                    </li>
+                                    <li class="carousel__slide">
+                                        <figure>
+                                            <div><img src="./rsc-P-H/p.2.1-slide-l160.jpg" alt=""></div>
+            
+                                            <figcaption><h3>2 Err.</h3>
+                                                <p>
+                                                    Err.
+                                                    <span class="credit">Err.</span>
+                                                </p>
+                                            </figcaption>
+                                        </figure>
+                                    </li>
+                                    <li class="carousel__slide">
+                                        <figure>
+                                            <div><img src="./rsc-P-H/p.2.2-slide-t254-Maede.jpg" alt=""></div>
+            
+                                            <figcaption><h3>3 Err.</h3>
+                                                <p>
+                                                    Err.
+                                                    <span class="credit">Err.</span>
+                                                </p>
+                                            </figcaption>
+                                        </figure>
+                                    </li>
+                                    <li class="carousel__slide">
+                                        <figure>
+                                            <div><img src="./rsc-P-H/p.2.3-slide-t280-Celeron_11.jpg" alt=""></div>
+            
+                                            <figcaption><h3>4 Err.</h3>
+                                                <p>
+                                                    Err.
+                                                    <span class="credit">Err.</span>
+                                                </p>
+                                            </figcaption>
+                                        </figure>
+                                    </li>
+                                    <li class="carousel__slide">
+            
+                                        <figure>
+                                            <div><img src="./rsc-P-H/p.2.4-slide-t300.jpg" alt=""></div>
+            
+                                            <figcaption><h3>5 Err.</h3>
+                                                <p>
+                                                    Err.
+                                                    <span class="credit">Err.</span>
+                                                </p>
+                                            </figcaption>
+                                        </figure>
+                                    </li>
+                                </ul>
+            
+                                <ul class="carousel__thumbnails">
+                                    <li><label for="slide-1">
+                                        <img src="./rsc-P-H/p.2.0-slide-l110-130.jpg" alt=""></label>
+                                    </li>
+                                    <li><label for="slide-2">
+                                        <img src="./rsc-P-H/p.2.1-slide-l160.jpg" alt=""></label>
+                                    </li>
+                                    <li><label for="slide-3">
+                                        <img src="./rsc-P-H/p.2.2-slide-t254-Maede.jpg" alt=""></label>
+                                    </li>
+                                    <li><label for="slide-4">
+                                        <img src="./rsc-P-H/p.2.3-slide-t280-Celeron_11.jpg" alt=""></label>
+                                    </li>
+                                    <li><label for="slide-5">
+                                        <img src="./rsc-P-H/p.2.4-slide-t300.jpg" alt=""></label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </article>
             </section>
+
+
+
+            
         </main>
 
         <footer>
@@ -131,5 +221,10 @@
                 </div>
             </nav>
         </footer>
+
+
+        
+
+        
     </body>
 </html>
