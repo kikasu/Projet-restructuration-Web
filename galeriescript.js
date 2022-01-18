@@ -8,12 +8,80 @@ let imgAndText = [
     ["Protubérance le 6 avril 2007", "sol060407.jpg", 0, 2007],
     ["Protubérances le 17 août 2007 au PST","sol170807.jpg", 0, 2007],
     ["Le globe solaire le 26 août 2007","sol260807.jpg", 0, 2007],
-    ["Taches solaires le 3 juin 2007 en rayonnement H alpha, lunette FSQ 106", "tjc30607.jpg", 0, 2007]
+    ["Taches solaires le 3 juin 2007 en rayonnement H alpha, lunette FSQ 106", "tjc30607.jpg", 0, 2007],
+    ["Mosaïque lunaire réalisée le 28 mai 2012 grâce à un télescope de 250mm de diamètre muni d'une caméra DMK 31. ", "lune2805124.jpg",1, "AUTRE"],
+    [" Le cratère Bullialdus photographiée grâce à la lunette de 160 mm de diamètre de l'observatoire", 
+    "Bullialdus_200305.jpg",1, "AUTRE"],
+    ["Le cratère Julius", "Julius_170305.jpg",1,"AUTRE"],
+    ["Croissant lunaire photographié le 18 avril 2013 au foyer d'un télescope de 250 mm de diamètre", "lune180413.jpg",1,"AUTRE"],
+    [" La région de l'ancien cirque lunaire Stöfler ( 140 km de diamètre )."
+    +"Télescope Schmidt-Cassegrain de 200 mm de diamètre et lentille de barlow X2. ", "lune191008.jpg",1,"STÖFLER"],
+    ["Progression des ombres sur le cratère Stöfler."+"Animation réalisée le 1er juin 2017 de 20h 08 à 21h 06 TU grâce à un télescope Cassegrain"+ 
+    "de 250 mm de diamètre muni d'une lentille de barlow x1,6 et d'une caméra ASI 120MC", "lune010617.gif",1,"STÖFLER"],
+    ["La région du cratère Stöfler photographiée au foyer d'un télescopeCassegrain de 250 mm de diamètre muni d'une caméra ASI120MC ", "stofler260515.jpg",1,"STÖFLER"],
+    ["La région des cratères Walter et Stöfler photographiée au foyer d'un télescope Cassegrain de 250 mm de diamètre muni d'une caméra ASI120MC", "walter180116.jpg",1,"STÖFLER"],
+    ["La région lunaire du cirque Heraclite photographiée grâce à un télescope de 250mm de diamètre muni d'une caméra DMK 31.", "lune2805125.jpg",1,"HERACLITE"],
+    ["Animation des ombres sur la région du cratère Heraclite réalisée le 3 avril 2017 de 19h 15 à 20h 15 TU au foyer d'un télescope Cassegrain de 250mm de diamètre muni"+
+    " d'une lentille de barlow x1,6 et d'une caméra ASI 120MC.", "heraclite030417.gif",1,"HERACLITE"],
+    [" La région du cratère Héraclite photographiée grâce à un télescope Cassegrain de 250 mm de diamètre muni d'une lentille de barlow x3 "+
+    "et d'un appareil photo numérique Sony A7s", "heraclite120519.jpg",1,"HERACLITE"],
+    ["SC 200 + Vesta pro + barlow x2", "lune11.jpg",1,"COPERNIC"],
+    ["SC 200 + Vesta pro au foyer", "lune13.jpg",1,"COPERNIC"],
+    ["Le cratère Copernic de 90 km de diamètre et ses remparts en gradins", "cop.jpg",1,"COPERNIC"],
+    ["La région du cirque lunaire Copernic de 90 km de diamètre avec ses remparts de 3800 m de hauteur. Télescope LX 90 de 200 mm de diamètre", "copernic120909.jpg",1,"COPERNIC"],
+    [" Le cirque lunaire Copernic de 90 km de diamètre, avec ses remparts de 3800 m et ses pitons centraux. "+
+    "Télescope de 200 mm de diamètre muni d'une barlow X2 et d'une caméra DMK 31.", "lune230210.jpg",1,"COPERNIC"],
+    ["Le cirque lunaire jeune Copernic, de 90 km de diamètre. Photographie réalisée grâce à un télescope C.11 de 280 mm de diamètre "+
+    "muni d'une lentille de barlow x2 et d'une caméra DMK 31", "copernic120211.jpg",1, "COPERNIC"],
+    ["La région lunaire du cirque Copernic et des Apennins photographiée grâce à un télescope de 250 mm de diamètre", "lune1403112.jpg",1, "COPERNIC"],
+    ["Mosaïque de la région lunaire du cirque Copernic réalisée au foyer d'un télescope de 250 mm de diamètre", "copernic120511.jpg",1, "COPERNIC"],
+    ["La région lunaire du cirque Copernic photographiée grâce à la lunette de 160 mm de diamètre de l'Observatoire munie d'une caméra DBK 21", "lune1106112.jpg", 1, "COPERNIC"],
+    ["Le cirque Copernic photographié grâce à un télescope de 250mm de diamètre muni d'une caméra DMK 31.", "lune102126.jpg", 1, "COPERNIC"],
+    ["La région du cratère Copernic photographiée au foyer d'un télescope Cassegrain de 250 mm de diamètre muni d'une caméra ASI120MC", "copernic140219.jpg", 1, "COPERNIC"],
+    ["La région des cratères Copernic (à gauche) et Eratosthène (en haut à droite) photographiée grâce à un télescope Cassegrain de 250 mm de diamètre muni d'une "+
+    "lentille de barlow x1,6 et d'une caméra ASI 120MC", "lune130519.jpg", 1, "COPERNIC"],
+    ["Progression des ombres sur le cratère Copernic. Animation réalisée sur une durée de 45 min le 16 avril 2016  grâce à un télescope Cassegrain de" + 
+    "250 mm de diamètre muni d'une lentille de barlow x1,6 et d'une caméra ASI 120MC", "copernic1604161.gif", 1, "COPERNIC"],
+    ["Le cratère Copernic photographié le 16 avril 2016 grâce à un télescope Cassegrain de 250 mm de diamètre muni d'une lentille de barlow x1,6 et d'une caméra ASI 120MC", "copernic160416.jpg", 1, "COPERNIC"],
+    ["La région du cratère Copernic photographiée grâce à un télescope Cassegrain de 250 mm de "+
+    "diamètre muni d'une lentille de barlow x1,6 et d'une caméra ASI120MC", "copernic230321.jpg", 1, "COPERNIC"],
+    ["Clavius, avec ses 220 km de diamètre, est l'un des plus grands cratères lunaires", "clav.jpg", 1, "CLAVIUS"],
+    ["Clavius photographié grâce à la lunette de 160 mm de diamètre de l'observatoire", "Clavius_200305.jpg", 1, "CLAVIUS"],
+    ["Clavius photographié grâce au télescope de 300 mm de diamètre de l'observatoire T 300 - photo argentique sur du TP 2415", "luneag9.jpg", 1, "CLAVIUS"],
+    ["Clavius photographié grâce au télescope de 300 mm de diamètre de l'observatoire T 300 + Vesta pro + barlow x3", "lune10.jpg", 1, "CLAVIUS"],
+    ["Région du cratère Clavius", "regionclavius.jpg", 1, "CLAVIUS"],
+    ["La région du cratère Clavius et du pôle sud lunaire photographiée grâce à un télescope LX 90", "lune171008.jpg", 1, "CLAVIUS"],
+    ["Mosaïque lunaire de la région des cirques Clavius et Tycho. Télescope Maksutov de 127 mm de diamètre et barlow X2", "claviustycho.jpg", 1, "CLAVIUS"],
+    ["La région du cirque Clavius et du pôle sud lunaire. Télescope LX 90", "lune140809.jpg", 1, "CLAVIUS"],
+    ["La région du cirque lunaire Clavius photographiée grâce à un télescope LX 90 de 200 mm de diamètre muni d'une lentille de barlow X2 et d'une caméra DMK 31", "claviusdmk.jpg", 1, "CLAVIUS"],
+    ["Le grand cirque Clavius photographié près du terminateur lunaire. Télescope Schmidt-Cassegrain de 200 mm de diamètre muni d'une barlow X2 et " +
+    "d'une caméra DMK 31", "claviusdmk2.jpg", 1, "CLAVIUS"],
+    ["Le très vieux cirque lunaire Clavius, de 220 km de diamètre avec ses murailles pouvant atteindre 4600 m de hauteur. " +
+    "Photographie réalisée grâce à un télescope C.11 de 280 mm de diamètre muni d'une lentille de barlow x2 et d'une caméra DMK 31", "clavius120211.jpg", 1, "CLAVIUS"],
+    ["Le célèbre cratère lunaire Clavius photographié à l'aide d'un télescope de 127mm de diamètre muni d'une lentille de barlow X 2", "clavius210811.jpg", 1, "CLAVIUS"],
+    ["La région des cratères Clavius et Moretus photographiée au foyer d'un télescope C.11 de 280mm de diamètre muni d'une lentille de barlow X2 et d'une caméra DMK 31.", "clavius10412.jpg", 1, "CLAVIUS"],
+    ["Animation de deux images du cratère lunaire Clavius réalisée au foyer d'un télescope C.11 de 280mm de diamètre muni d'une lentille de barlow X2 et d'une caméra DMK 31. "+
+    "On distingue une légère progression des ombres et les effets de la libration lunaire.", "clavius1avril2012.gif", 1, "CLAVIUS"],
+    ["La région lunaire du cirque Clavius photographiée grâce à un télescope de 250mm de diamètre muni d'une caméra DMK 31.", "lune10212.jpg", 1, "CLAVIUS"],
+    ["Le cirque Clavius photographié grâce à un télescope de 250mm de diamètre muni d'une caméra DMK 31.", "lune102122.jpg", 1, "CLAVIUS"],
+    ["Le cratère lunaire Clavius photographié grâce au C.11 de l'observatoire muni d'une caméra ASI 224 MC", "clavius130219.jpg", 1, "CLAVIUS"],
+    ["Animation des ombres sur le cratère lunaire Clavius réalisée le 6 avril 2017 de 22h 51 à 23h 27 TU au foyer d'un télescope Cassegrain de 250mm de "+
+    "diamètre muni  d'une caméra ASI 120MC.", "clavius060417.gif", 1, "CLAVIUS"],
+    ["La région du pôle sud lunaire et du cratère Clavius photographiée au foyer d'un télescope Schmidt-Cassegrain de 200 mm de diamètre", "clavius150516.jpg", 1, "CLAVIUS"],
+    [" La région du cratère Clavius photographiée grâce à un télescope Cassegrain de 250 mm de diamètre muni d'une lentille de barlow x3 et d'un appareil photo numérique Sony A7s ", "clavius181219.jpg", 1, "CLAVIUS"],
+    ["La région du cratère Clavius photographiée grâce à un télescope Cassegrain de 250 mm de diamètre muni d'une lentille de barlow x2 et d'une caméra ASI 120MC", "clavius090414.jpg", 1, "CLAVIUS"],
+    ["La région du cratère Clavius photographiée au foyer d'un télescope Cassegrain de 250 mm de diamètre muni d'une caméra ASI120MC", "clavius170316.jpg", 1, "CLAVIUS"],
+    ["La région du cratère Clavius photographiée au foyer d'un télescope Cassegrain de 250 mm de diamètre muni d'une caméra ASI120MC", "clavius180116.jpg", 1, "CLAVIUS"],
+    ["Animation des ombres sur le cratère lunaire Clavius réalisée le 1er avril 2020 de 19h 39 à " +
+    "21h 42 TU au foyer d'un télescope Cassegrain de 250mm de diamètre muni d'une lentille de barlow x1,6 et d'une caméra ASI 120MC.", "clavius010420.gif", 1, "CLAVIUS"],
+    ["La région du cratère Clavius photographiée au foyer d'un télescope Cassegrain de 250 mm de diamètre muni d'une caméra ASI120MC", "clavius230121.jpg", 1, "CLAVIUS"],
+
 ];
-let categorie = ["soleil", "lune", "planetes", "cometes", "nebuleses", "amasDetoile", 
+let categorie = ["soleil", "lune", "planetes", "cometes", "nebuleses", "amasDetoile", "etoileDouble", 
     "galaxies", "eclipsesLune", "eclipsesSol", "phenomenesDivers"];
 let filtredImg;
 let page = 0;
+let startSubFiltre = 0;
 function setImage(filtre1, filtre2)
 {
     filtredImg = [];
@@ -34,13 +102,14 @@ function setImage(filtre1, filtre2)
     }
     setPageSelector()
 }
+let sFiltre;
 function setSFiltre(filtreP)
 {
-    let sFiltre = [];
+    sFiltre = [];
     switch (categorie[filtreP]){
         case 'soleil': sFiltre = [2001, 2005, 2007, 2008, 2009, 2010,
             2011, 2012, 2013, 2014, 2015, 2016, 
-            2017, 2018, 2019, 2020, 2021, "AUTRE"];
+            2017, 2018, 2019, 2020, 2021]; 
             break;
         case 'lune': sFiltre = ["STÖFLER", "HERACLITE", "COPERNIC", "CLAVIUS", 
             "CYRILLE, THEOPHILE & CATHERINE", "ALPHONSE, ARZACHEL & PTOLEMEE", 
@@ -63,6 +132,7 @@ function setSFiltre(filtreP)
             break;
         case 'amasDetoile': sFiltre = ["MESSIER 11", "DE PERSEE", "DES PLEIADES", "AUTRE"];
             break;
+        case 'etoileDouble': break;
         case 'galaxies': sFiltre = ["MESSIER 81 & 82", "NGC 5907", "ANDROMEDE", "NGC 891", 
             "TRIO DU LION", "MESSIER 108", "NGC 6946", "MESSIER 33", "NGC 7331", 
             "CHIENS DE CHASSE", "MESSIER 61", "SOMBRERO", 
@@ -81,7 +151,7 @@ function setSFiltre(filtreP)
     let inHtml = "";
     for(let i = 0; i < sFiltre.length; i++)
     {
-        inHtml += '<div class="Sselection" id="select'+sFiltre[i]+'" onclick="setImage('+filtreP+','+sFiltre[i]+')">'+sFiltre[i]+'</div>';
+        inHtml += '<div class="Sselection" id="select'+sFiltre[i]+'" onclick="setImage('+filtreP+','+ "'" + sFiltre[i]+"'"+')">'+sFiltre[i]+'</div>';
     }
     document.querySelector('#GsousSelection').innerHTML = inHtml;
     setImage(filtreP, 0);
@@ -93,12 +163,12 @@ function setPageSelector()
     {
         
         let numbrePage = numOfPage();
-        inHtml = '<button id="pagePlus" onclick="affichage(page + 1)"><</button>';
+        inHtml = '<button class="PagesButtons" id="pagePlus" onclick="affichage(page + 1)"><</button>';
         for(let i = 0; i < numbrePage; i++)
         {
-            inHtml += '<button id="page"'+i+' onclick="affichage('+i+')">' + (i + 1) +'</button>'
+            inHtml += '<button class="PagesButtons" id="page"'+i+' onclick="affichage('+i+')">' + (i + 1) +'</button>'
         }
-        inHtml+= '<button id="pageMoin" onclick="affichage(page - 1)">></button>';
+        inHtml+= '<button class="PagesButtons" id="pageMoin" onclick="affichage(page - 1)">></button>';
     }
     document.querySelector('#GpageSel').innerHTML = inHtml;
     affichage(0)
@@ -118,12 +188,14 @@ function affichage(numP)
         if(i + n < filtredImg.length)
         {
             console.log(i + n);
+            document.querySelector(imgPointer).style.display = "block";
             document.querySelector(imgPointer).src = "rsc/image/galerie/" + filtredImg[i + n][1];
             document.querySelector(descPointer).innerHTML = filtredImg[i + n][0];
         }
         else
         {
             document.querySelector(imgPointer).src = "";
+            document.querySelector(imgPointer).style.display = "none";
             document.querySelector(descPointer).innerHTML ="";
         }
     }
@@ -137,3 +209,5 @@ function numOfPage()
     else
         return r + 1;
 }
+setImage(-1);
+affichage(0)
