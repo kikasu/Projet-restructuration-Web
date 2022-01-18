@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Archives</title>
-    <link href="archives.css" rel="stylesheet" type="text/css" />
+
     <link href="commun.css" rel="stylesheet" type="text/css" />
 
 </head>
@@ -16,22 +16,17 @@
             <li><a href="#"><img id="logoMenu" src="images/LogoMenuWhite.png"></a>
                 <ul>
                     <li><a href="index.html">Accueil</a></li>
-                    <li><a href="#">Présentation</a></li>
+                    <li><a href="presentation.html">Présentation</a></li>
                     <li><a href="#">Galerie</a></li>
                     <li><a href="NousContacter.html">Nous contacter</a></li>
+                    <li><a href="histoire.html">Histoire</a></li>
                 </ul>
             </li>
         </ul>    
 
 
 
-
-
-
-
-
-
-            <img id="logo" src="images/LogoObservatoire.png">
+            <img id="logo" src="images/Logo.png">
     
           <nav>
             <div class="deroulant">
@@ -39,7 +34,8 @@
     
               <div class="contenu-bouton">
                 <a href="index.html">Accueil</a>
-                <a href="#">Présentation</a>
+                <a href="presentation.html">Présentation</a>
+                <a href="histoire.html">Histoire</a>
               </div>
             </div>
     
@@ -56,7 +52,7 @@
               <button class="bouton">Nous Contacter</button>
     
               <div class="contenu-bouton">
-                <a href="#">Nous contacter</a>
+                <a href="NousContacter.html">Nous contacter</a>
 
                <a href="#">Liens</a>
               </div>
@@ -71,7 +67,7 @@
         </header>
 
 
-        <section>
+        <section id="sectioncommun">
 
             <div id="corps">
                 <div class="compartiment">
@@ -166,22 +162,19 @@
 
 
         <footer>
-            <div>
+            <div class="elementFooter">
                 <a href="https://www.instagram.com/observatoirederouen/" target="_bank"><img src="images/LogoInstaWhite.png" alt="Logo Instagram"/></a>
             </div>
-            <div>
-                <h3>
+            <div class="elementFooter">
+                <h3 id="help">
                     Aidez-nous !
                 </h3>
-                <p>Avec dons déductibles d'impots</p>
+                <a id="help2" href="http://astrosurf.com/obsrouen/demandededons.doc">Avec dons déductibles d'impots</a>
             </div>
-            <div id="contact">
-                <p>Nous contacter : <br>
-                    0235880196<br>
-                    <a id="email" href="mailto:obs.rouen@club-internet.fr">obs.rouen@club-internet.fr</a>
-    
-                </p>
+            <div class="elementFooter" id="contact">
+                <a class="docu" href="NousContacter.html">Nous contacter</a>
+                   
             </div>
-        </footer> 
+        </footer>
 </body>
 </html>
