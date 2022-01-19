@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta name="referrer" content="origin">
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=corner"/>
+
+        <link rel="stylesheet" href="./commun.css"/>
+        <link rel="stylesheet" href="./rsc-P-H/style_h.css"/>
+
+        <script src="./rsc-P-H/script.js" defer></script>
+
+        <title>Histoire Observatoire de Rouen</title>
+        <link rel="icon" href="./images/logo.png"/>
+    </head>
+
+    <body>
+         <!--DÉBUT HEADER-->
+
+	<header>
+        <ul id="menu-demo2">
+            <li><a href="#"><img id="logoMenu" src="images/LogoMenuWhite.png"></a>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="presentation.html">Présentation</a></li>
+                    <li><a href="Galerie.html">Galerie</a></li>
+                    <li><a href="NousContacter.html">Nous contacter</a></li>
+                    <li><a href="histoire.html">Histoire</a></li>
+                </ul>
+            </li>
+        </ul>    
+
+        </img>
+
+            <a href="index.html"><img id="logo" src="images/Logo.png"></a>
+
+        <nav>
+            <div class="deroulant">
+            <button class="bouton">L'observatoire</button>
+
+            <div class="contenu-bouton">
+                <a href="index.html">Accueil</a>
+                <a href="presentation.html">Présentation</a>
+                <a href="histoire.html">Histoire</a>
+            </div>
+            </div>
+
+            <div class="deroulant">
+            <button class="bouton">Les Activités</button>
+            <div class="contenu-bouton">
+                
+                <a href="Galerie.html">Galerie</a>
+                
+            </div>
+            </div>
+
+        <div class="deroulant" id="contacts">
+            <button class="bouton">Nous Contacter</button>
+
+            <div class="contenu-bouton">
+                <a href="NousContacter.html">Nous contacter</a>
+               
+            <a href="#">Liens</a>
+            </div>
+            </div>
+            
+        </nav>
+            
+            <div>
+                <h2 id="indicateur">Histoire</h2>
+            </div>
+      
+    </header>
+
+     <!--FIN HEADER-->
+
+        <main>
+
+            <h1>Histoire de l'Observatoire de Rouen</h1>
+
+            <section>
+                <article>
+                    <p>
+                        L'Observatoire Astronomique de Rouen a été fondé en 1884 à l'initiative de <a href="">Ludovic Gully</a>, professeur de mathématique à Rouen.
+                        Voici un extrait du <span id="journal" onclick="journalToggle()">journal de Rouen daté du 1er décembre 1884<span id="journal_img"><img src="./rsc-P-H/h.1.1-click-article_Journal-fondation_Obs.jpg" alt="Ludovic Gully"/></span></span> et relatant cette fondation.
+                    </p>
+                    <p class="sub_article">
+                        Dès sa création, des observateurs talentueux comme <a href="">Georges Caron</a>, 
+                        vice président de l'association qui possédait un observatoire personnel à Lillebonne, 
+                        fixe sur pellicule des phénomènes célestes exceptionnels comme le passage de "la comète de Halley", 
+                        "l'éclipse perlée du 17 avril 1912" ou "la comète Morehouse(1908c)".
+                    </p>
+                    <div id="caron_photos">
+                        <img onclick="slide_photo_caron(0)" src="./rsc-P-H/h.2.0-slide-halley1910.jpg" alt="Comète de Halley - 30 Juin 1910"/>
+                        <img onclick="slide_photo_caron(1)" src="./rsc-P-H/h.2.1-slide-eclipse1912.jpg" alt="Eclipse perlée - 17 Avril 1912 - #1"/>
+                        <img onclick="slide_photo_caron(2)" src="./rsc-P-H/h.2.2-slide-eclipse1912.jpg" alt="Eclipse perlée - 17 Avril 1912 - #2"/>
+                        <img onclick="slide_photo_caron(3)" src="./rsc-P-H/h.2.3-slide-cometemorehouse.png" alt="Comète Morehouse(1908c) - 1908"/>
+                    </div>
+                </article>
+                <div class="slide" id="slide_photo_caron">
+                    <div>
+                        <button class="prec_arrow" onclick="slide_photo_caron('<')">
+                            <img src="./images/arrow.png" alt="Precedent"/>
+                        </button>
+
+                        <img id="slide_photo_caron_img" onclick="slide_photo_caron()" src="" alt=""/>
+
+                        <button class="next_arrow" onclick="slide_photo_caron('>')">
+                            <img src="./images/arrow.png" alt="Suivant"/>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="static">
+                    <div>
+                        <img src="./rsc-P-H/h.1.0-static-Ludivic-Gully.jpg" alt="Ludovic Gully"/>
+                    </div>
+
+                    <p><a href="">Ludovic Gully</a></p>
+                </div>
+            </section>
+
+            <section>
+                <article>
+                    <h2>
+                        Voici un article de cette époque conservé dans 
+                        les archives de l'Observatoire de Harvard aux Etats-Unis:
+                    </h2>
+                </article>
+
+                <div class="slide">
+                    <div>
+                        <button class="prec_arrow" onclick="doSlide('h_slide_arc-0')">
+                            <img src="./img/arrow.png" alt="Precedent"/>
+                        </button>
+
+                        <img src="" alt=""/>
+
+                        <button class="next_arrow" onclick="doSlide('h_slide_arc-1')">
+                            <img src="./img/arrow.png" alt="Suivant"/>
+                        </button>
+                    </div>
+
+                    <p id="h_slide_arc_text">Err.</p>
+                </div>
+                <!-- <img src="" alt="Archive Observatoire Harvard - Journal page 67"/>
+                <img src="" alt="Archive Observatoire Harvard - Journal page 68"/>
+                <img src="" alt="Archive Observatoire Harvard - Journal page 69"/>
+                <img src="" alt="Archive Observatoire Harvard - Journal page 70"/>
+                <img src="" alt="Archive Observatoire Harvard - Journal page 71"/>
+                <img src="" alt="Archive Observatoire Harvard - Journal page 72"/>
+                <img src="" alt="Archive Observatoire Harvard - Journal page 73"/>
+                <img src="" alt="Archive Observatoire Harvard - Journal page 74"/>
+                <img src="" alt="Archive Observatoire Harvard - Journal page 75"/> -->
+            </section>
+
+            <section>
+                <article>
+                    <p>
+                        Le membre le plus éminent de l'Observatoire, au moment de sa création, 
+                        était sans conteste <a href="https://fr.wikipedia.org/wiki/Dorothea_Klumpke">Dorothea Klumpke</a>.
+                    </p>
+                    <p>
+                        Citoyenne américaine, elle vécut 50 ans en France et fut la première femme à obtenir 
+                        le titre de Docteur en Astronomie à la Sorbonne. Elle participa à l'élaboration 
+                        de la carte du ciel et effectua des observations astronomiques en ballon. 
+                        Elle aida beaucoup l'Observatoire Astronomique de Rouen par son soutien matériel et moral.
+                    </p>
+                    <p>
+                        Le 17 août 1885, Ludovic Gully découvre la supernova S Andromedae dans la galaxie d'Andromède, 
+                        grâce à un télescope de 160mm que nous possédons encore.
+                    </p>
+                    <p>
+                        En 1895, l'Observatoire acquiert notre lunette de 160mm grâce 
+                        à une souscription publique initiée par un membre actif, M. Bouis.
+                    </p>
+                    <p>
+                        Le 31 mars 1901, l'Observatoire inaugure, en présence de Dorothée Klumpke, un nouveau télescope de 300 mm de diamètre. 
+                        D'une taille considérable à l'époque pour un instrument d'amateur, ce télescope demeure pour nous un grand mystère, 
+                        car aucun résultat photographique ou observationnel ne lui est attribué dans nos archives. 
+                        On trouve une dernière mention le concernant dans un registre de 1929 qui le décrit comme "inutilisable et démonté"... 
+                        A-t-il jamais servi un jour?
+                    </p>
+                </article>
+
+                <div class="static">
+                    <div>
+                        <img src="./rsc-P-H/h.4.0-static-Dorothea-Klumps.jpg" alt="Dorothea Klumpke"/>
+                    </div>
+
+                    <p><a href="https://fr.wikipedia.org/wiki/Dorothea_Klumpke">Dorothea Klumpke</a></p>
+                </div>
+            </section>
+
+            <section>
+                <article>
+                    <p>
+                        A la mort du vice président Caron en 1919, l'Observatoire hérite de l'astrographe double de ce dernier : 
+                        ce sont les lunettes de 110 et 130mm actuellement exposées dans nos locaux.
+                    </p>
+                    <p class="sub_article">
+                        Après la disparition en 1905 du fondateur Ludovic Gully, 
+                        se succèdent à la présidence de l'Observatoire Messieurs:
+                        <ul>
+                            <li>Delehaye 1905-1920</li>
+                            <li>Salvignac 1920-1936</li>
+                            <li>Adrien Métayer 1936-1952</li>
+                            <li>Louis Lemarignier 1952-1955</li>
+                            <li>Jean Lefebvre 1955-1963</li>
+                            <li>Edgard Jouis 1963-1976</li>
+                            <li>André Clastot 1976-1990</li>
+                            <li>Eric Mandon 1990-...</li>
+                        </ul>
+                    </p>
+                </article>
+                
+                <div class="static">
+                    <div>
+                        <img src="./rsc-P-H/p.2.0-slide-l110-130.jpg" alt="La double lunette 110-130mm et son système d'entraînement par horlogerie"/>
+                    </div>
+
+                    <p>La double lunette 110-130mm et son système d'entraînement par horlogerie</p>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <a href="https://www.instagram.com/observatoirederouen/"  rel="noreferrer noopener" target="_bank">
+                <img src="./images/LogoInstaWhite.png" alt="Logo Instagram"/>
+            </a>
+            <nav>
+                <p>Nous contacter : </p>
+                <div>
+                    <p> Email : <a href="mailto:obs.rouen@club-internet.fr">obs.rouen@club-internet.fr</a></p>
+                    <p>Tel : <a href="tel:+33235880196">02.35.88.01.96</a></p>
+                </div>
+            </nav>
+        </footer>
+    </body>
+</html>

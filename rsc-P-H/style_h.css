@@ -1,0 +1,151 @@
+main {
+    width: 90%;
+  
+    margin: auto;
+  
+    display: flex;
+      flex-flow: column nowrap;
+      gap: 20px;
+}
+section {
+    display: flex;
+      justify-content: space-between;
+      gap: 10px;
+}
+section a {
+    color: #fff;
+    text-decoration: underline;
+}
+section a:hover {
+    color: #aaa;
+}
+section ul {
+    display: flex;
+        flex-flow: column;
+        gap: 5px;
+}
+section article {
+    width: 75%;
+}
+section article div {
+    display: flex;
+        gap: 20px;
+}
+section article div img {
+    max-width: 15%;
+}
+
+.sub_article {
+    margin-top: 40px;
+}
+
+.static, .slide {
+    width: 24%;
+    height: fit-content;
+
+    border: solid 2px #fff;
+    border-radius: 5px;
+    
+    text-align: center;
+}
+.static div, .slide div {
+    min-height: 80px;
+
+    border-bottom: solid 1px #fff;
+
+    display: flex;
+        flex-flow: nowrap;
+}
+.static img, .slide img {
+    width: 100%;
+
+    background-image: url("../images/noImg.gif");
+    background-size: 80%;
+    background-position: center;
+}
+
+.slide img {
+    width: 84%;
+}
+.slide button {
+    width: 8%;
+    border: none;
+
+    background: none;
+    background-color: #fff2;
+}
+.slide button img {
+    background: none;
+}
+.slide button:hover {
+    background-color: #fff4;
+}
+
+#journal {
+    color: #fff;
+    text-decoration: underline;
+}
+#journal:hover {
+    color: #aaa;
+}
+#journal_img {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+
+    padding: 25% 50%;
+
+    display: none;
+}
+#journal_img.active {
+    background-color: #0008;
+    display: block;
+}
+#journal img {
+    position: absolute;
+    top: 1%;
+    left: 10%;
+
+    width: 80%;
+}
+
+#caron_photos {
+    display: flex;
+        flex-flow: wrap;
+        justify-content: center;
+}
+#caron_photos img {
+    padding: 1px;
+
+    border: solid 2px #fff;
+}
+
+
+
+
+
+
+
+
+@media (max-width: 700px) {
+
+    main {
+        width: 100%;
+
+        text-align: center;
+    }
+
+    section {
+        flex-flow: wrap;
+    }
+    section article {
+        width: 100%;
+    }
+
+    .static, .slide {
+        width: 90%;
+
+        margin: auto;
+    }
+  }

@@ -1,36 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta name="referrer" content="origin">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Archives</title>
-    <link href="archives.css" rel="stylesheet" type="text/css" />
+
+    <link href="commun.css" rel="stylesheet" type="text/css" />
+
 </head>
 <body>
     <header>
-        <img id="logoMenu" src="logoMenu.png">
-            <img id="logo" src="LogoObservatoire.png">
+        
+        <ul id="menu-demo2">
+            <li><a href="#"><img id="logoMenu" src="images/LogoMenuWhite.png" alt="Logo du Menu"></a>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="presentation.html">Présentation</a></li>
+                    <li><a href="Galerie.html">Galerie</a></li>
+                    <li><a href="NousContacter.html">Nous contacter</a></li>
+                    <li><a href="histoire.html">Histoire</a></li>
+                </ul>
+            </li>
+        </ul>    
+
+
+
+            <a href="index.html"><img id="logo" src="images/Logo.png" alt="Logo de l'observatoire"></a>
     
           <nav>
             <div class="deroulant">
               <button class="bouton">L'observatoire</button>
     
               <div class="contenu-bouton">
-                <a href="#">Accueil</a>
-                <a href="#">Présentation</a>
+                <a href="index.html">Accueil</a>
+                <a href="presentation.html">Présentation</a>
+                <a href="histoire.html">Histoire</a>
               </div>
             </div>
     
              <div class="deroulant">
               <button class="bouton">Les Activités</button>
               <div class="contenu-bouton">
-                <!-- <a href="#">Nouveautés</a> -->
-                <a href="#">Galerie</a>
-                <!-- <a href="#">Articles</a> -->
-                <!-- <a href="#">Agenda</a> -->
-                <!-- <a href="#">Archives</a> -->
-                <!-- <a href="#">Éphémérides</a> -->
+
+                <a href="Galerie.html">Galerie</a>
+              
               </div>
             </div>
     
@@ -38,22 +53,22 @@
               <button class="bouton">Nous Contacter</button>
     
               <div class="contenu-bouton">
-                <a href="#">Nous contacter</a>
-                <!-- <a href="#">Questions</a> -->
+                <a href="NousContacter.html">Nous contacter</a>
+
                <a href="#">Liens</a>
               </div>
             </div>
             
           </nav>
               
-            <div id="indicateur">
-                <h2>ARCHIVES</h2>
-          </div>
+            <div>
+                <h2 id="indicateur">Archives</h2>
+            </div>
           
         </header>
 
 
-        <section>
+        <section class="sectioncommun">
 
             <div id="corps">
                 <div class="compartiment">
@@ -61,46 +76,45 @@
                         Les éclipses
                     </h2>
 
-                 
-                        <a class="docu" href="http://astrosurf.com/obsrouen/21fevrier2008.doc" target="_blank">Éclipse de Lune du 21 février 2008</a>
-                        <img class="logoDownload" src="logoDownload.png">
+                        <a class="docu" href="http://astrosurf.com/obsrouen/21fevrier2008.doc" rel="noreferrer noopener" target="_blank">Éclipse de Lune du 21 février 2008</a>
+                        <img class="logoDownload" alt="logo Téléchargement" src="images/logoDownload.png">
                         <br>
-                        <a class="docu" href="http://astrosurf.com/obsrouen/3mars2007.doc" target="__blank">Éclipse de Lune du 3 mars 2008</a>
-                        <img class="logoDownload" src="logoDownload.png">
+                        <a class="docu" href="http://astrosurf.com/obsrouen/3mars2007.doc" rel="noreferrer noopener" target="_blank">Éclipse de Lune du 3 mars 2008</a>
+                        <img class="logoDownload" alt="logo Téléchargement" src="images/logoDownload.png">
                         <br>
-                        <a class="docu" href="http://astrosurf.com/obsrouen/29mars2006.doc" target="_blank">Éclipse de Soleil du 29 mars 2006</a>
-                        <img class="logoDownload" src="logoDownload.png">
+                        <a class="docu" href="http://astrosurf.com/obsrouen/29mars2006.doc" rel="noreferrer noopener" target="_blank">Éclipse de Soleil du 29 mars 2006</a>
+                        <img class="logoDownload" alt="logo Téléchargement" src="images/logoDownload.png">
                         <br>
-                        <a class="docu" href="http://astrosurf.com/obsrouen/eclipse.doc" target="__blank">Éclipse de Soleil du 3 octobre 2005</a>
-                        <img class="logoDownload" src="logoDownload.png">
+                        <a class="docu" href="http://astrosurf.com/obsrouen/eclipse.doc" rel="noreferrer noopener" target="_blank">Éclipse de Soleil du 3 octobre 2005</a>
+                        <img class="logoDownload" alt="logo Téléchargement" src="images/logoDownload.png">
                         <br>
-                        <a class="docu" href="http://astrosurf.com/obsrouen/eclipses2011.doc" target="_blank">Les éclipses du 21 décembre 2010 et du 4 janvier 2011</a>
-                        <img class="logoDownload" src="logoDownload.png">
+                        <a class="docu" href="http://astrosurf.com/obsrouen/eclipses2011.doc" rel="noreferrer noopener" target="_blank">Les éclipses du 21 décembre 2010 et du 4 janvier 2011</a>
+                        <img class="logoDownload" alt="logo Téléchargement" src="images/logoDownload.png">
                         <br>
-                        <a class="docu" href="http://astrosurf.com/obsrouen/eclune210119.pdf" target="__blank">Description de l'éclipse de Lune du 21 janvier 2019</a>
-                        <img class="logoDownload" src="logoDownload.png">
+                        <a class="docu" href="http://astrosurf.com/obsrouen/eclune210119.pdf" rel="noreferrer noopener" target="_blank">Description de l'éclipse de Lune du 21 janvier 2019</a>
+                        <img class="logoDownload" alt="logo Téléchargement" src="images/logoDownload.png">
                         <br>
-                        <a class="docu" href="http://astrosurf.com/obsrouen/ecl160719.doc" target="__blank">Description de l'éclipse de Lune du 16 juillet 2019.</a>
-                        <img class="logoDownload" src="logoDownload.png">
+                        <a class="docu" href="http://astrosurf.com/obsrouen/ecl160719.doc" rel="noreferrer noopener" target="_blank">Description de l'éclipse de Lune du 16 juillet 2019.</a>
+                        <img class="logoDownload" alt="logo Téléchargement" src="images/logoDownload.png">
 
                         <h3>Éclipses partielles</h3>
 
-                        <a class="docu" href="http://astrosurf.com/obsrouen/ecl160808.doc" target="_blank">Éclipse partielle de Lune du 16 août 2008</a>
-                        <img class="logoDownload" src="logoDownload.png">
+                        <a class="docu" href="http://astrosurf.com/obsrouen/ecl160808.doc" rel="noreferrer noopener" target="_blank">Éclipse partielle de Lune du 16 août 2008</a>
+                        <img class="logoDownload" alt="logo Téléchargement" src="images/logoDownload.png">
                         <br>
-                        <a class="docu" href="http://astrosurf.com/obsrouen/ecl10808.doc" target="__blank">L'éclipse partielle de Soleil du 1 août 2008</a>
-                        <img class="logoDownload" src="logoDownload.png">
+                        <a class="docu" href="http://astrosurf.com/obsrouen/ecl10808.doc" rel="noreferrer noopener" target="_blank">L'éclipse partielle de Soleil du 1 août 2008</a>
+                        <img class="logoDownload" alt="logo Téléchargement" src="images/logoDownload.png">
                         <br>
-                        <a class="docu" href="http://astrosurf.com/obsrouen/eclsol100621.doc" target="_blank">Éclipse partielle de Soleil du 10 juin 2021.doc</a>
-                        <img class="logoDownload" src="logoDownload.png">
+                        <a class="docu" href="http://astrosurf.com/obsrouen/eclsol100621.doc" rel="noreferrer noopener" target="_blank">Éclipse partielle de Soleil du 10 juin 2021.doc</a>
+                        <img class="logoDownload" alt="logo Téléchargement" src="images/logoDownload.png">
 
                         <h3>Éclipses totales</h3>
 
-                        <a class="docu" href="http://astrosurf.com/obsrouen/ecl270718.doc" target="_blank">Éclipse totale de Lune du 27 juillet 2018</a>
-                        <img class="logoDownload" src="logoDownload.png">
+                        <a class="docu" href="http://astrosurf.com/obsrouen/ecl270718.doc" rel="noreferrer noopener" target="_blank">Éclipse totale de Lune du 27 juillet 2018</a>
+                        <img class="logoDownload" alt="logo Téléchargement" src="images/logoDownload.png">
                         <br>
-                        <a class="docu" href="http://astrosurf.com/obsrouen/eclipse280915.doc" target="__blank">Éclipse totale de Lune du 28 septembre 2015</a>
-                        <img class="logoDownload" src="logoDownload.png">
+                        <a class="docu" href="http://astrosurf.com/obsrouen/eclipse280915.doc" rel="noreferrer noopener" target="_blank">Éclipse totale de Lune du 28 septembre 2015</a>
+                        <img class="logoDownload" alt="logo Téléchargement" src="images/logoDownload.png">
                 </div>
 
                 <div class="compartiment">
@@ -108,14 +122,14 @@
                         Mercure
                     </h2>
 
-                    <a class="docu" href="http://astrosurf.com/obsrouen/dpm.doc" target="_blank">Découvrir la planète Mercure en vue du 11 novembre 2019</a>
-                    <img class="logoDownload" src="logoDownload.png">
+                    <a class="docu" href="http://astrosurf.com/obsrouen/dpm.doc" rel="noreferrer noopener" target="_blank">Découvrir la planète Mercure en vue du 11 novembre 2019</a>
+                    <img class="logoDownload" alt="logo Téléchargement" src="images/logoDownload.png">
                     <br>
-                    <a class="docu" href="http://astrosurf.com/obsrouen/pmds111119.doc" target="__blank">Passage de Mercure devant le Soleil le 11 novembre 2019</a>
-                    <img class="logoDownload" src="logoDownload.png">
+                    <a class="docu" href="http://astrosurf.com/obsrouen/pmds111119.doc" rel="noreferrer noopener" target="_blank">Passage de Mercure devant le Soleil le 11 novembre 2019</a>
+                    <img class="logoDownload"  alt="logo Téléchargement" src="images/logoDownload.png">
                     <br>
-                    <a class="docu" href="http://astrosurf.com/obsrouen/transitmercure90516.doc" target="_blank">Le passage de Mercure devant le Soleil du 9 mai 2016</a>
-                    <img class="logoDownload" src="logoDownload.png">
+                    <a class="docu" href="http://astrosurf.com/obsrouen/transitmercure90516.doc" rel="noreferrer noopener" target="_blank">Le passage de Mercure devant le Soleil du 9 mai 2016</a>
+                    <img class="logoDownload" alt="logo Téléchargement" src="images/logoDownload.png">
 
 
                 </div>
@@ -125,9 +139,9 @@
                         Vénus
                     </h2>
 
-                    <a class="docu" href="http://astrosurf.com/obsrouen/artvenus.htm" target="_blank">La planète Vénus</a>
+                    <a class="docu" href="planetteVenus.html" rel="noreferrer noopener" target="_blank">La planète Vénus</a>
                     <br>
-                    <a class="docu" href="http://astrosurf.com/obsrouen/arttransitvenus.htm" target="__blank">Le transit de Vénus du 8 Juin 2004</a>
+                    <a class="docu" href="passageVenus.html" rel="noreferrer noopener" target="_blank">Le transit de Vénus du 8 Juin 2004</a>
 
                 </div>
 
@@ -136,8 +150,8 @@
                         Autre
                     </h2>
 
-                    <a class="docu" href="http://astrosurf.com/obsrouen/chronologiedesconcepts.doc" target="_blank">Chronologie des concepts</a>
-                    <img class="logoDownload" src="logoDownload.png">
+                    <a class="docu" href="http://astrosurf.com/obsrouen/chronologiedesconcepts.doc" rel="noreferrer noopener" target="_blank">Chronologie des concepts</a>
+                    <img class="logoDownload" alt="logo Téléchargement" src="images/logoDownload.png">
 
                 </div>
 
@@ -148,22 +162,19 @@
 
 
         <footer>
-            <div>
-                <a href="https://www.instagram.com/observatoirederouen/" target="_bank"><img src="LogoInstaBlack.png" alt="Logo Instagram"/></a>
+            <div class="elementFooter">
+                <a href="https://www.instagram.com/observatoirederouen/" rel="noreferrer noopener" target="_blank"><img src="images/LogoInstaWhite.png" alt="Logo Instagram"/></a>
             </div>
-            <div>
-                <h3>
+            <div class="elementFooter">
+                <h3 id="help">
                     Aidez-nous !
                 </h3>
-                <p>Avec dons déductibles d'impots</p>
+                <a id="help2" rel="noreferrer noopener" href="http://astrosurf.com/obsrouen/demandededons.doc">Avec dons déductibles d'impots</a>
             </div>
-            <div id="contact">
-                <p>Nous contacter : <br>
-                    0235880196<br>
-                    <a id="email" href="mailto:obs.rouen@club-internet.fr">obs.rouen@club-internet.fr</a>
-    
-                </p>
+            <div class="elementFooter" id="contact">
+                <a class="docu" href="NousContacter.html">Nous contacter</a>
+                   
             </div>
-        </footer> 
+        </footer>
 </body>
 </html>

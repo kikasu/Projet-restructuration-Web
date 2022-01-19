@@ -1,72 +1,89 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 
 <head>
+    <meta name="referrer" content="origin">
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
 
 	<title>Observatoire De Rouen</title>
 
-	<link href="main.css" rel="stylesheet" type="text/css" />
-	<script src="script.js" defer>
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
 
-	</script>
+    <link href="commun.css" rel="stylesheet" type="text/css">
 
 	<!-- <META HTTP-EQUIV="Refresh" CONTENT="30; URL=https://projet-restructuration-web.geotroll.repl.co/"> -->
 
 </head>
 
 <body>
+
+    <!--DÉBUT HEADER-->
+
 	<header>
-    <img id="logoMenu" src="logoMenu.png">
-		<img id="logo" src="LogoObservatoire.png">
+        <ul id="menu-demo2">
+            <li><a href="#"><img id="logoMenu" src="images/LogoMenuWhite.png" alt="Logo Menu"></a>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="presentation.html">Présentation</a></li>
+                    <li><a href="Galerie.html">Galerie</a></li>
+                    <li><a href="NousContacter.html">Nous contacter</a></li>
+                    <li><a href="histoire.html">Histoire</a></li>
+                </ul>
+            </li>
+        </ul>    
 
-      <nav>
-        <div class="deroulant">
-          <button class="bouton">L'observatoire</button>
+            <a href="index.html"><img id="logo" src="images/Logo.png" alt="Logo Observatoire"></a>
 
-          <div class="contenu-bouton">
-            <a href="#">Accueil</a>
-            <a href="#">Présentation</a>
-          </div>
-        </div>
+        <nav>
+            <div class="deroulant">
+            <button class="bouton">L'observatoire</button>
 
-         <div class="deroulant">
-          <button class="bouton">Les Activités</button>
-          <div class="contenu-bouton">
-            <!-- <a href="#">Nouveautés</a> -->
-            <a href="#">Galerie</a>
-            <!-- <a href="#">Articles</a> -->
-            <!-- <a href="#">Agenda</a> -->
-            <!-- <a href="#">Archives</a> -->
-            <!-- <a href="#">Éphémérides</a> -->
-          </div>
-        </div>
+            <div class="contenu-bouton">
+                <a href="index.html">Accueil</a>
+                <a href="presentation.html">Présentation</a>
+                <a href="histoire.html">Histoire</a>
+                
+            </div>
+            </div>
 
-      <div class="deroulant" id="contacts">
-          <button class="bouton">Nous Contacter</button>
+            <div class="deroulant">
+            <button class="bouton">Les Activités</button>
+            <div class="contenu-bouton">
+                
+                <a href="Galerie.html">Galerie</a>
+                
+            </div>
+            </div>
 
-          <div class="contenu-bouton">
-            <a href="#">Nous contacter</a>
-            <!-- <a href="#">Questions</a> -->
-           <a href="#">Liens</a>
-          </div>
-        </div>
-        
-      </nav>
-          
-        <div id="indicateur">
-            <h2>ACCUEIL</h2>
-      </div>
+        <div class="deroulant" id="contacts">
+            <button class="bouton">Nous Contacter</button>
+
+            <div class="contenu-bouton">
+                <a href="NousContacter.html">Nous contacter</a>
+               
+            <a href="#">Liens</a>
+            </div>
+            </div>
+            
+        </nav>
+            
+            <div>
+                <h2 id="indicateur">Accueil</h2>
+            </div>
       
     </header>
 
-    <section>
+     <!--FIN HEADER-->
+
+     <!--DÉBUT PRÉSENTATION-->
+
+    <section class="sectioncommun">
         <div id="photoAutour">
-            <div id="photoFond">
+            <div id="photoFond" title="Fontaine Sainte-Marie">
                     
-                <h1>L'OBSERVATOIRE ASTRONOMIQUE DE ROUEN</h1>
-                <h3>  Vous souhaîtes une bonne année 2022</h2>
+                <h1 class="textesPresentation">L'OBSERVATOIRE ASTRONOMIQUE DE ROUEN</h1>
+                <h3>Vous souhaîtes une bonne année 2022</h3>
 
 
                     <div id="presentation">
@@ -81,24 +98,55 @@
 
             </div>
         </div>
+</section>
+        <!--FIN PRÉSENTATION-->
+
         <br>
+    
 
-        <h2>Photos réalisées en 2021 :</h2>
-        <div id="divPhoto">
-            
-            <div class="slider">
-                <div class="slides">
-                    <div class="slide"><img src="Jupiter.jpg" alt=""></img></div>
-                    <div class="slide"><img src="GalaxieSpirale.jpg" alt=""></div>
-                    <div class="slide"><img src="GalaxieSpirale2.jpg" alt=""></div>
-                </div>
-            </div>
+        <!--DÉBUT CAROUSSEL-->
 
-
-        </div>
-
+            <main id="maincommun">
+                <h2>Photos réalisées en 2021 :</h2>
         
+                <!-- Conteneur principal de tout le diaporama -->
+                <div class="diapo">
+                    <!-- Conteneur des "diapos" -->
+                    <div class="elements">
+                        <!-- Première diapo -->
+                        <div class="element active"> 
+                            <img src="images/GalaxieSpirale-slide01.jpg" alt="Image 1">
+                            
+                        </div>
+                        <!-- Deuxième diapo -->
+                        <div class="element">
+                            <img src="images/GalaxieSpirale2-slide02.jpg" alt="Image 2">
+                            
+                        </div>
+                        <!-- Troisième diapo -->
+                        <div class="element">
+                            <img src="images/Jupiter-slide03.jpg" alt="Image 3">
+                            
+                        </div>
+                        <!-- Quatrième diapo -->
+                        <div class="element">
+                            <img src="images/GalaxieSpirale2-slide02.jpg" alt="Image 2">
+                           
+                        </div>
+                    </div>
 
+                    <!-- Flèches de navigation -->
+                    <i id="nav-gauche" class="las la-chevron-left"></i>
+                    <i id="nav-droite" class="las la-chevron-right"></i>
+
+                </div>
+            </main>
+            
+        <!--FIN CAROUSSEL-->
+
+        <!--DÉBUT IMRD-->
+        <section class="sectioncommun">
+            
         <div id="compartimentIMRD">
             <div id="divInfoSeance">
                 <div id="infoSeance">
@@ -114,15 +162,13 @@
             <div id="meteoRDV">
                 <div id="meteo">
                     <h2>Météo :</h2>
-                    <!-- <p>Afin de savoir si le ciel sera-t-il dégagé cette nuit</p>
-                    <a href="https://en.sat24.com/en" target="_blank"><img src="Téléscope+nuage.png"></a> -->
                     <iframe id="widget_autocomplete_preview" src="https://meteofrance.com/widget/prevision/765400"> </iframe>
-                    
                 </div>
+                
                 <div id="RDV">
                     <h2>Prenez rendez-vous :</h2>
-                    <p>Merci de bien vouloir effectuer vos demandes de rendez-vous, et de réceptions de classes ou de groupes uniquement par mail: 
-                        <br>observatoire.populaire.rouen@orange.fr</p>
+                    <p class="demandeRDV">Merci de bien vouloir effectuer vos demandes de rendez-vous, et de réceptions de classes ou de groupes uniquement par mail:</p>
+                    <p id="emailRDV">observatoire.populaire.rouen@orange.fr</p>
                 </div>
             </div>
 
@@ -130,22 +176,21 @@
                 <div id="docu">
                     <h2>Documentation</h2>
                     <ul>
-                        <a class="docu" href="http://astrosurf.com/obsrouen/astronomiegenerale.pdf" target="_blank"><li>-Astronomie général</li></a>
-                        <br>
-                        <a class="docu" href="http://astrosurf.com/obsrouen/preslunef.pdf" target="__blank"><li>-Petit guide lunaire</li></a>
+                        <li class="docuIndex"><a href="http://astrosurf.com/obsrouen/astronomiegenerale.pdf" rel="noreferrer noopener" target="_blank">-Astronomie général</a></li>
+                        <li class="docuIndex"><a href="http://astrosurf.com/obsrouen/preslunef.pdf" rel="noreferrer noopener" target="_blank">-Petit guide lunaire</a></li>
                     </ul>
                     <h2>Archives</h2>
                     
                     <ul>
-                        <a class="docu" href="http://astrosurf.com/obsrouen/ecl160808.doc"><li>-Éclipse partielle de Lune du 16 août 2008</li></a>
-                        <br>
-                        <a class="docu" href="http://astrosurf.com/obsrouen/ecl10808.doc"><li>-Éclipse partielle de Lune du 1 août 2008</li></a>
-                        <br>
-                        <a class="docu" href="http://astrosurf.com/obsrouen/21fevrier2008.doc"><li>-Éclipse de Lune du 21 février 2008</li></a>
-                        <br>
-                        <a class="docu" href="http://astrosurf.com/obsrouen/3mars2007.doc"><li>-Éclipse de Lune du 3 mars 2007</li></a>
-                        <br>
-                        <a class="docu" href=""><li><strong>-Plus d'archives...</strong></li></a>
+                        <li class="docuIndex"><a href="http://astrosurf.com/obsrouen/ecl160808.doc">-Éclipse partielle de Lune du 16 août 2008</a></li>
+                        
+                        <li class="docuIndex"><a href="http://astrosurf.com/obsrouen/ecl10808.doc">-Éclipse partielle de Lune du 1 août 2008</a></li>
+                        
+                        <li class="docuIndex"><a href="http://astrosurf.com/obsrouen/21fevrier2008.doc">-Éclipse de Lune du 21 février 2008</a></li>
+                     
+                        <li class="docuIndex"><a href="http://astrosurf.com/obsrouen/3mars2007.doc">-Éclipse de Lune du 3 mars 2007</a></li>
+                        
+                        <li class="docuIndex"><a href="archives.html" rel="noreferrer noopener" target="_blank"><strong>-Plus d'archives...</strong></a></li>
                     </ul>
                 </div>
 
@@ -154,23 +199,28 @@
 
     </section>
 
+    <!--FIN IRMD-->
+
+    <!--DÉBUT FOOTER-->
+
     <footer>
-        <div>
-            <a href="https://www.instagram.com/observatoirederouen/" target="_bank"><img src="LogoInstaBlack.png" alt="Logo Instagram"/></a>
+        <div class="elementFooter">
+            <a href="https://www.instagram.com/observatoirederouen/" rel="noreferrer noopener" target="_blank"><img src="images/LogoInstaWhite.png" alt="Logo Instagram"/></a>
         </div>
-        <div>
-            <h3>
+        <div class="elementFooter">
+            <h3 id="help">
                 Aidez-nous !
             </h3>
-            <p>Avec dons déductibles d'impots</p>
+            <a id="help2" href="http://astrosurf.com/obsrouen/demandededons.doc">Avec dons déductibles d'impots</a>
         </div>
-        <div id="contact">
-            <p>Nous contacter : <br>
-                0235880196<br>
-                <a id="email" href="mailto:obs.rouen@club-internet.fr">obs.rouen@club-internet.fr</a>
+        <div class="elementFooter" id="contact">
+            <a class="docu" href="NousContacter.html">Nous contacter</a>
+               
+        </div>
+    </footer>
 
-            </p>
-        </div>
-    </footer> 
+    <!--FIN FOOTER-->
+    
+    <script src="script.js"></script>
   </body>
 </html>

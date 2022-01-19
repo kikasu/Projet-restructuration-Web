@@ -1,0 +1,112 @@
+/*CLASS*/
+.Pselection{
+    margin: 10px;
+    padding: 10px;
+    min-width: 110px;
+    max-width: 180px;
+    text-align: center;
+}
+.ImgText{
+    margin: 10px;
+    max-height: 100%;
+    background-color: rgba(255, 255, 255, 0.2)
+
+}
+.ImgGal{
+    object-fit: contain;
+    height: 60%;
+}
+.TextGal{
+    height: 30%;
+    overflow: auto;
+    scrollbar-width: thin;
+}
+.PagesButtons{
+    height: 50px;
+    width: 50px;
+    background-color: #101025;
+    border-radius: 20px;
+    border: none;
+    color: white;
+}
+.Sselection{
+    white-space: nowrap;
+    margin: 10px;
+    padding: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
+/* ID*/
+#Gaffichage{
+    display: grid;
+    grid-template-columns: repeat(3, 3fr);
+    grid-template-rows: repeat(2, 400px);
+    background-color: rgba(255, 255, 255, 0.2)
+}
+#Gaffichage div img{
+    width: 100%;
+}
+#GPSelection{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: rgba(255, 255, 255, 0.2)
+}
+#GpageSel{
+    display: flex;
+    justify-content: center;
+}
+#GsousSelection{
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: auto;
+    margin-top: 3px;
+    background-color: rgba(255, 255, 255, 0.2);
+    scrollbar-width: thin;
+}
+
+.docu{
+    color: white;
+}
+
+.docu:hover{
+    color: goldenrod;
+}
+
+/*CONTEXT*/
+.Pselection:hover{
+    text-decoration: underline;
+}
+.PagesButtons:hover{
+    background-color: white;
+    color: black;
+}
+.Sselection:hover{
+    text-decoration: underline;
+}
+@media(max-width: 811px) {
+    .Pselection{
+        background-color: rgba(255, 255, 255, 0.2);
+        border-radius: 10px;
+    }
+}
+@media(max-width: 620px){
+    #Gaffichage{
+        grid-template-columns: repeat(2, 2fr);
+        grid-template-rows: repeat(3, 400px);
+    }
+    #GPSelection{
+        overflow: auto;
+        max-height: 250px;
+        scrollbar-width: thin;
+    }
+}
+@media(max-width: 470px){
+    #Gaffichage{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6, 400px);
+    }
+    
+}
