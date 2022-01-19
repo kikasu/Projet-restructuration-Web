@@ -78,7 +78,7 @@ let imgAndText = [
 
 ];
 let categorie = ["soleil", "lune", "planetes", "cometes", "nebuleses", "amasDetoile", "etoileDouble", 
-    "galaxies", "eclipsesLune", "eclipsesSol", "phenomenesDivers"];
+    "galaxies", "eclipsesLune", "eclipsesSol", "phenomenesDivers", -1];
 let filtredImg;
 let page = 0;
 let startSubFiltre = 0;
@@ -95,7 +95,7 @@ function setImage(filtre1, filtre2)
         {
             filtredImg.push(imgAndText[i]);
         }
-        else if(filtre1 == -1)
+        else if(categorie[filtre1] == -1 || filtre1 == -1)
         {
             filtredImg.push(imgAndText[i]);
         }
@@ -146,6 +146,8 @@ function setSFiltre(filtreP)
             break;
         case 'phenomenesDivers' : sFiltre = ["AURORES BOREALES", "TRANSIT DE MERCURE", "TRANSITE DE VENUS",
             "SPECTRES STELLAIRES", "METEORES", "VOIE LACTEE", "ASTEROÏDE 2014 JO 25", "AUTRE"];
+            break;
+        case -1: sFiltre = [];
             break;
     }
     let inHtml = "";
