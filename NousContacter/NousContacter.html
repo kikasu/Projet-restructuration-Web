@@ -12,6 +12,8 @@
     
     <link href="style.css" rel="stylesheet" type="text/css">
 
+    
+
     <!-- <META HTTP-EQUIV="Refresh" CONTENT="30; URL=https://projet-restructuration-web.geotroll.repl.co/"> -->
 
 </head>
@@ -79,11 +81,6 @@
 
     <main>
 
-            <section class="contacter" id="titre">
-              <h1>NOUS CONTACTER</h1>
-
-            </section>
-
             <section class="contacter" id="coordonées">
               <p>
                 telephone : 02 35 88 01 96
@@ -123,50 +120,52 @@
 
             </section>
 
-            <!-- <section class="contacter" id="contact">
+            <section class="contacter" id="titre">
+              <h1>NOUS CONTACTER</h1>
+
+            </section>
+
+            <section class="contacter" id="formulaire">
+
+
+                        <!-- completer : action="---" avec la page de reception du formulaire -->
+              <form action="" method="post"> 
               
-              <sub class="contact" id="identité">
-
-                <div class="identité" id="nom">
-                  <label for="nom">Nom</label>
-                  <br>
-                  <input type="text" name="nom" id="" >
-                </div>
+              <sub class="formulaire" id="identité">
+                <input type="text" name="nom" id="nom" required placeholder="NOM">
+                <span class="bar"></span>
+                <label for="nom"></label>
                 
+              </sub>
 
-                <div class="identité" id="prenom">
-                  <label for="prenom">Prenom</label>
-                  <br>
-                  <input type="text" name="prenom" id="prenom">
-                </div>
+              <sub class="formulaire" id="email">
+                <input type="email" name="email" id="email" required placeholder="EMAIL">
+                <span class="bar"></span>
+                <label for="email"></label>
                 
-
               </sub>
 
-              <sub class="contact" id="email">
-                <label for="email">Email</label>
-                <br>
-                <input type="email" name="email" id="email">
+              <sub class="formulaire" id="message">
+                <textarea placeholder="VOTRE MESSAGE ICI" name="message" id="message" required ></textarea>
+                <span class="bar"></span>
+                <label for="message"></label>
+                
               </sub>
 
-              <sub class="contact" id="message">
-                <label for="message">Votre Message ici</label>
-                <br>
-                <input type="text" name="message" id="message">
+              <sub class="formulaire" id="envoyer">
+                <input type="submit" value="envoyer">
               </sub>
 
-              <sub class="contact" id="envoyer">
-                <input type="button" value="envoyer">
-              </sub>
+            </form>
 
-            </section> -->
+            </section>
 
 
           </main>
 
     <!-- FIN DU MAIN -->
 
-    <!--DÉBUT FOOTER-->
+    <!-- DÉBUT FOOTER -->
 
     <footer>
         <div class="elementFooter">
@@ -187,4 +186,4 @@
         </div>
     </footer>
 
-    <!--FIN FOOTER-->
+    <!-- FIN FOOTER -->

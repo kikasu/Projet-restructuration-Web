@@ -124,8 +124,7 @@ section{
 justify-content: center;
 display: flex;
 flex-flow: row wrap;
-margin-top: 5%;
-margin-bottom: 5%;
+margin-top: 10%;
 text-align: center;
 color: #eee;
 }
@@ -157,57 +156,82 @@ margin: auto;
 
 /*pour la partie question nous contacter */
 
-#contact{
-display: flex;
-flex-direction: column;
+
+/* LABEL ======================================= */
+
+/* form starting stylings ------------------------------- */
+
+form{
+  width: 80%;
+  color: #101025;
+  text-align: center;
 }
 
-#identité {
-display: flex;
-border: yellow solid 2px;
-width: 100%;
-
+.formulaire{ 
+  position:relative; 
+  margin-bottom:45px;
 }
 
-.identité{
-border: olive 1px solid;
-width: 50%;
-}
-
-label {
-text-align: center;
+#formulaire{
+  
+  font-family:'Roboto';
+  width: 100%; 
+  margin:5px auto 0; 
+  background: none;
 }
 
 input {
-background: none;
-  border-radius: 15px;
-  border: black solid 1px;
+  background-color: hsla(0, 0%, 100%, 0.35);
+  font-size: 18px;
+  padding: 10px 10px 10px 10px;
+  margin-top: 15px;
+  width: 90%;
+  border-radius: 12px 12px 0px 0px;
+  border: none;
+  border-bottom: 4.5px solid #757575;
   text-align: center;
-  color: wheat;
-  width: 80%;
 }
 
-#email input{
-width: 50%;
+textarea{
+  background-color:hsla(0, 0%, 100%, 0.35) ;
+  font-size:18px;
+  padding:10px 10px 10px 5px;
+  margin-top: 15px;
+  height: 200px;
+  border:none;
+  border-radius: 12px 12px 0px 0px;
+  width: 90%;
+  border-bottom: 4.5px solid #757575;
+  text-align: center;
 }
 
-#email{
-border: springgreen solid 2px;
-margin: auto;
-width: 100%;
+label 				 {
+  color:rgb(29, 29, 29); 
+  font-size:18px;
+  font-weight:normal;
+  position:absolute;
+  pointer-events:none;
+  left:5px;
+  top:0px;
 }
 
-#message input{
-width:80%;
-min-height: 200px;
-max-height: 100%;
+::placeholder {
+  color: #000;
 }
 
-#message{
-border: pink solid 2px;
-margin: auto;
-width: 100%;
+#envoyer input {
+  width: 40%;
+  height: 50px;
+  border-radius: 10px;
+  border: none;
 }
+
+#envoyer:hover input {
+  background-color: rgba(238, 238, 238, 0.60);
+}
+
+
+/* fin de la partie contacter */
 
 
 @media(max-width: 836px){
@@ -244,18 +268,6 @@ footer img {
 }
 
 
-#contact{
-  text-align: center;
-  padding-right: 5px;
-}
-
-#email{
-    color: whitesmoke;
-}
-
-#email:hover{
-    color: goldenrod;
-}
 
 
 
