@@ -62,20 +62,24 @@
   
   </header>
   <main id="galerie">
+    <div id="GalerieModal" class="modal">
+      <span class="close" onclick="CloseFullS()">&times;</span>
+      <img class="modal-content" id="img01">
+    </div>
       <section id="Gselection">
         <div id="GPSelection">
-          <div class="Pselection" id="soleil" onclick="setSFiltre(0)">SOLEIL</div>
-          <div class="Pselection" id="lune" onclick="setSFiltre(1)">LUNE</div>
-          <div class="Pselection" id="planet" onclick="setSFiltre(2)">PLANETES</div>
-          <div class="Pselection" id="cometes" onclick="setSFiltre(3)">COMETES</div>
-          <div class="Pselection" id="nebuleses" onclick="setSFiltre(4)">NEBULESES</div>
-          <div class="Pselection" id="amas" onclick="setSFiltre(5)">AMAS D'ETOILES</div>
-          <div class="Pselection" id="etoileDouble" onclick="setSFiltre(6)">ETOILES DOUBLES</div>
-          <div class="Pselection" id="galaxies" onclick="setSFiltre(7)">GALAXIES</div>
-          <div class="Pselection" id="eclipLune" onclick="setSFiltre(8)">ECLIPSES DE LUNE</div>
-          <div class="Pselection" id="eclipSol" onclick="setSFiltre(9)">ECLIPSES DE SOLEIL</div>
-          <div class="Pselection" id="diversP" onclick="setSFiltre(10)">PHENOMENES DIVER</div>
-          <div class="Pselection" id="tout" onclick="setSFiltre(11)">TOUT</div>
+          <div class="Pselection" id="soleil" onclick="setSFiltre(0); LockFilter('#soleil', 0) ">SOLEIL</div>
+          <div class="Pselection" id="lune" onclick="setSFiltre(1); LockFilter('#lune', 0)">LUNE</div>
+          <div class="Pselection" id="planet" onclick="setSFiltre(2); LockFilter('#planet', 0)">PLANETES</div>
+          <div class="Pselection" id="cometes" onclick="setSFiltre(3); LockFilter('#cometes', 0)">COMETES</div>
+          <div class="Pselection" id="nebuleses" onclick="setSFiltre(4); LockFilter('#nebuleses', 0)">NEBULESES</div>
+          <div class="Pselection" id="amas" onclick="setSFiltre(5); LockFilter('#amas', 0)">AMAS D'ETOILES</div>
+          <div class="Pselection" id="etoileDouble" onclick="setSFiltre(6); LockFilter('#etoileDouble', 0)">ETOILES DOUBLES</div>
+          <div class="Pselection" id="galaxies" onclick="setSFiltre(7); LockFilter('#galaxies', 0)">GALAXIES</div>
+          <div class="Pselection" id="eclipLune" onclick="setSFiltre(8); LockFilter('#eclipLune', 0)">ECLIPSES DE LUNE</div>
+          <div class="Pselection" id="eclipSol" onclick="setSFiltre(9); LockFilter('#eclipSol', 0)">ECLIPSES DE SOLEIL</div>
+          <div class="Pselection" id="diversP" onclick="setSFiltre(10); LockFilter('#diversP', 0)">PHENOMENES DIVER</div>
+          <div class="Pselection" id="tout" onclick="setSFiltre(11); LockFilter('#tout', 0)">TOUT</div>
         </div>
         <div id="GsousSelection">
           
@@ -83,30 +87,29 @@
       </section>
       <section id="Gaffichage">
         <div class="ImgText">
-          <img class="ImgGal" id="image0" src="" alt="">
+          <img class="ImgGal" id="image0" src="" alt="" onclick="FocusImg('#image0')">
           <p class="TextGal" id="desc0"></p>
         </div>
         <div class="ImgText">
-          <img class="ImgGal" id="image1" src="" alt="">
+          <img class="ImgGal" id="image1" src="" alt="" onclick="FocusImg('#image1')">
           <p class="TextGal" id="desc1"></p>
         </div>
         <div class="ImgText">
-          <img class="ImgGal" id="image2" src="" alt="">
+          <img class="ImgGal" id="image2" src="" alt="" onclick="FocusImg('#image2')">
           <p class="TextGal" id="desc2"></p>
         </div>
         <div class="ImgText">
-          <img class="ImgGal" id="image3" src="" alt="">
+          <img class="ImgGal" id="image3" src="" alt="" onclick="FocusImg('#image3')">
           <p class="TextGal" id="desc3"></p>
         </div>
         <div class="ImgText">
-          <img class="ImgGal" id="image4" src="" alt="">
+          <img class="ImgGal" id="image4" src="" alt="" onclick="FocusImg('#image4')">
           <p class="TextGal" id="desc4"></p>
         </div>
         <div class="ImgText">
-          <img class="ImgGal" id="image5" src="" alt="">
+          <img class="ImgGal" id="image5" src="" alt="" onclick="FocusImg('#image5')">
           <p class="TextGal" id="desc5"></p>
-        </div>
-      </section>
+        </div>      </section>
       <section id="GpageSel">
         
       </section>

@@ -82,6 +82,8 @@ let categorie = ["soleil", "lune", "planetes", "cometes", "nebuleses", "amasDeto
 let filtredImg;
 let page = 0;
 let startSubFiltre = 0;
+let pFiltreAct = "";
+let sFiltreAct = "";
 function setImage(filtre1, filtre2)
 {
     filtredImg = [];
@@ -153,7 +155,7 @@ function setSFiltre(filtreP)
     let inHtml = "";
     for(let i = 0; i < sFiltre.length; i++)
     {
-        inHtml += '<div class="Sselection" id="select'+sFiltre[i]+'" onclick="setImage('+filtreP+','+ "'" + sFiltre[i]+"'"+')">'+sFiltre[i]+'</div>';
+        inHtml += '<div class="Sselection" id="select'+sFiltre[i]+'" onclick="setImage('+filtreP+','+ "'" + sFiltre[i]+"'"+'); LockFilter('+"'#select"+sFiltre[i]+"'"+', 1)">'+sFiltre[i]+'</div>';
     }
     document.querySelector('#GsousSelection').innerHTML = inHtml;
     setImage(filtreP, 0);
@@ -170,7 +172,7 @@ function setPageSelector()
         {
             inHtml += '<button class="PagesButtons" id="page"'+i+' onclick="affichage('+i+')">' + (i + 1) +'</button>'
         }
-        inHtml+= '<button class="PagesButtons" id="pageMoin" onclick="affichage(page - 1)">></button>';
+        inHtml+= '<button class="PagesButtons" id="pageMoin" onclick="affichage(page - 1);">></button>';
     }
     document.querySelector('#GpageSel').innerHTML = inHtml;
     affichage(0)
@@ -210,6 +212,40 @@ function numOfPage()
         return r;
     else
         return r + 1;
+}
+function FocusImg(img)
+{
+    let imgToAff = document.querySelector(img).src;
+    var fullS = document.querySelector("#img01");
+    var modal = document.querySelector("#GalerieModal");
+    fullS.src = imgToAff;
+    modal.style.display = "block";
+}
+function CloseFullS()
+{
+    document.querySelector('#GalerieModal').style.display = 'none';
+}
+function LockFilter(filterId, PriSud)
+{
+    if(PriSud == 0)
+    {
+        try
+        {
+            document.querySelector(pFiltreAct).style.backgroundColor = 'rgba(255, 255, 255, 0.2)';
+        }
+        catch(e){}
+        pFiltreAct = filterId;
+    }
+    else
+    {
+        try
+        {
+            document.querySelector(sFiltreAct).style.backgroundColor = 'rgba(255, 255, 255, 0.2)';
+        }
+        catch(e){}
+        sFiltreAct = filterId;
+    }
+    document.querySelector(filterId).style.backgroundColor = 'rgba(0, 0, 0, 0.2)';
 }
 setImage(-1);
 affichage(0)
