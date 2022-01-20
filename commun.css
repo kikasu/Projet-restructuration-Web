@@ -398,6 +398,7 @@ header nav{
   margin-top: 50px;
   padding-left: 10px;
   padding-right: 10px;
+  margin-bottom: -9px;
   -webkit-transform:scale(1.05); /* Safari et Chrome */
   -moz-transform:scale(1.05); /* Firefox */
   -ms-transform:scale(1.05); /* Internet Explorer 9 */
