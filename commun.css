@@ -275,7 +275,7 @@ header nav{
 #photoFond{
   padding-top: 10px;
   margin: auto;
-  background: url('images/fontaine-saint-marie.jpg') ;
+  background: url('images/Accueil/fontaine-saint-marie.jpg') ;
   background-size: cover;
   height: 620px;
   max-width: 1200px;
@@ -442,7 +442,7 @@ header nav{
 @media(max-width: 885px){
 
   #photoFond{
-    background: url("images/fontaine-saint-marie2.jpg");
+    background: url("images/Accueil/fontaine-saint-marie2.jpg");
     background-size: cover;
   }
 

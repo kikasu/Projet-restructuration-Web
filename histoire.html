@@ -6,13 +6,13 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=corner"/>
 
-        <link rel="stylesheet" href="CSS/commun.css"/>
+        <link rel="stylesheet" href="commun.css"/>
         <link rel="stylesheet" href="./rsc-P-H/style_h.css"/>
 
         <script src="./rsc-P-H/script.js" defer></script>
 
         <title>Histoire Observatoire de Rouen</title>
-        <link rel="icon" href="./images/logo.png"/>
+        <link rel="icon" href="./images/logo/logo.png"/>
     </head>
 
     <body>
@@ -20,20 +20,21 @@
 
 	    <header>
             <ul id="menu-demo2">
-                <li><a href="#"><img id="logoMenu" src="images/LogoMenuWhite.png"></a>
+                <li><a href="#"><img id="logoMenu" src="images/logo/LogoMenuWhite.png"></a>
                     <ul>
                         <li><a href="index.html">Accueil</a></li>
                         <li><a href="presentation.html">Présentation</a></li>
                         <li><a href="Galerie.html">Galerie</a></li>
                         <li><a href="NousContacter.html">Nous contacter</a></li>
                         <li><a href="histoire.html">Histoire</a></li>
+                        <li><a href="Liens.html">Liens</a></li>
                     </ul>
                 </li>
             </ul>    
 
             </img>
 
-                <a href="index.html"><img id="logo" src="images/Logo.png"></a>
+                <a href="index.html"><img id="logo" src="images/logo/Logo.png"></a>
 
             <nav>
                 <div class="deroulant">
@@ -61,7 +62,7 @@
                 <div class="contenu-bouton">
                     <a href="NousContacter.html">Nous contacter</a>
                 
-                <a href="#">Liens</a>
+                <a href="Liens.html">Liens</a>
                 </div>
                 </div>
                 
@@ -341,17 +342,24 @@
             </section>
         </main>
 
-        <footer>
-            <a href="https://www.instagram.com/observatoirederouen/"  rel="noreferrer noopener" target="bank">
-                <img src="./images/LogoInstaWhite.png" alt="Logo Instagram"/>
-            </a>
-            <nav>
-                <p>Nous contacter : </p>
-                <div>
-                    <p> Email : <a href="mailto:obs.rouen@club-internet.fr">obs.rouen@club-internet.fr</a></p>
-                    <p>Tel : <a href="tel:+33235880196">02.35.88.01.96</a></p>
-                </div>
-            </nav>
-        </footer>
+         <!--DÉBUT FOOTER-->
+
+    <footer>
+        <div class="elementFooter">
+            <a href="https://www.instagram.com/observatoirederouen/" rel="noreferrer noopener" target="_blank"><img src="images/logo/LogoInstaWhite.png" alt="Logo Instagram"/></a>
+        </div>
+        <div class="elementFooter">
+            <h3 id="help">
+                Aidez-nous !
+            </h3>
+            <a id="help2" href="http://astrosurf.com/obsrouen/demandededons.doc">Avec dons déductibles d'impots</a>
+        </div>
+        <div class="elementFooter" id="contact">
+            <a class="docu" href="NousContacter.html">Nous contacter</a>
+               
+        </div>
+    </footer>
+
+    <!--FIN FOOTER-->
     </body>
 </html>
