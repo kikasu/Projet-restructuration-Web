@@ -1,31 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta name="referrer" content="origin">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Galerie</title>
-    <link rel="icon" href="./images/logo/logo.png"/>
-    <link rel="stylesheet" href="CSS/galerieStyle.css">
-    <link rel="stylesheet" href="commun.css">
+    <link rel="stylesheet" href="CSS/galerieStyle.css" type="text/css">
+    <link rel="stylesheet" href="commun.css" type="text/css">
 </head>
 <body>
 	<header>
     <ul id="menu-demo2">
-        <li><a href="#"><img id="logoMenu" src="menu/LogoMenu.png"></a>
+        <li><a href="#"><img id="logoMenu" src="images/Logo/LogoMenu.png"></a>
             <ul>
                 <li><a href="index.html">Accueil</a></li>
-                <li><a href="presentation.html">Présentation</a></li>
-                <li><a href="Galerie.html">Galerie</a></li>
-                <li><a href="NousContacter.html">Nous contacter</a></li>
+                <li><a href="#">Présentation</a></li>
+                <li><a href="#">Galerie</a></li>
+                <li><a href="#">Nous contacter</a></li>
             </ul>
         </li>
     </ul>    
 
     
 
-        <a href="index.html"><img id="logo" src="menu/LogoObservatoire.png"></a>
+        <a href="index.html"><img id="logo" src="images/Logo/LogoObservatoire.png"></a>
 
     <nav>
         <div class="deroulant">
@@ -33,7 +31,7 @@
 
         <div class="contenu-bouton">
             <a href="index.html">Accueil</a>
-            <a href="presentation.html">Présentation</a>
+            <a href="#">Présentation</a>
         </div>
         </div>
 
@@ -41,7 +39,7 @@
         <button class="bouton">Les Activités</button>
         <div class="contenu-bouton">
             
-            <a href="Galerie.html">Galerie</a>
+            <a href="#">Galerie</a>
             
         </div>
         </div>
@@ -50,7 +48,7 @@
         <button class="bouton">Nous Contacter</button>
 
         <div class="contenu-bouton">
-            <a href="NousContacter.html">Nous contacter</a>
+            <a href="#">Nous contacter</a>
            
         <a href="#">Liens</a>
         </div>
@@ -59,25 +57,29 @@
     </nav>
         
         <div>
-            <h2 id="indicateur">Galerie</h2>
+            <h2 id="indicateur">Vénus</h2>
         </div>
   
   </header>
   <main id="galerie">
+    <div id="GalerieModal" class="modal">
+      <span class="close" onclick="CloseFullS()">&times;</span>
+      <img class="modal-content" id="img01">
+    </div>
       <section id="Gselection">
         <div id="GPSelection">
-          <div class="Pselection" id="soleil" onclick="setSFiltre(0)">SOLEIL</div>
-          <div class="Pselection" id="lune" onclick="setSFiltre(1)">LUNE</div>
-          <div class="Pselection" id="planet" onclick="setSFiltre(2)">PLANÈTES</div>
-          <div class="Pselection" id="cometes" onclick="setSFiltre(3)">COMÉTES</div>
-          <div class="Pselection" id="nebuleses" onclick="setSFiltre(4)">NÉBULEUSES</div>
-          <div class="Pselection" id="amas" onclick="setSFiltre(5)">AMAS D'ÉTOILES</div>
-          <div class="Pselection" id="etoileDouble" onclick="setSFiltre(6)">ÉTOILES DOUBLES</div>
-          <div class="Pselection" id="galaxies" onclick="setSFiltre(7)">GALAXIES</div>
-          <div class="Pselection" id="eclipLune" onclick="setSFiltre(8)">ECLIPSES DE LUNE</div>
-          <div class="Pselection" id="eclipSol" onclick="setSFiltre(9)">ECLIPSES DE SOLEIL</div>
-          <div class="Pselection" id="diversP" onclick="setSFiltre(10)">PHÉNOMÈNES DIVER</div>
-          <div class="Pselection" id="tout" onclick="setSFiltre(11)">TOUT</div>
+          <div class="Pselection" id="soleil" onclick="setSFiltre(0); LockFilter('#soleil', 0) ">SOLEIL</div>
+          <div class="Pselection" id="lune" onclick="setSFiltre(1); LockFilter('#lune', 0)">LUNE</div>
+          <div class="Pselection" id="planet" onclick="setSFiltre(2); LockFilter('#planet', 0)">PLANETES</div>
+          <div class="Pselection" id="cometes" onclick="setSFiltre(3); LockFilter('#cometes', 0)">COMETES</div>
+          <div class="Pselection" id="nebuleses" onclick="setSFiltre(4); LockFilter('#nebuleses', 0)">NEBULESES</div>
+          <div class="Pselection" id="amas" onclick="setSFiltre(5); LockFilter('#amas', 0)">AMAS D'ETOILES</div>
+          <div class="Pselection" id="etoileDouble" onclick="setSFiltre(6); LockFilter('#etoileDouble', 0)">ETOILES DOUBLES</div>
+          <div class="Pselection" id="galaxies" onclick="setSFiltre(7); LockFilter('#galaxies', 0)">GALAXIES</div>
+          <div class="Pselection" id="eclipLune" onclick="setSFiltre(8); LockFilter('#eclipLune', 0)">ECLIPSES DE LUNE</div>
+          <div class="Pselection" id="eclipSol" onclick="setSFiltre(9); LockFilter('#eclipSol', 0)">ECLIPSES DE SOLEIL</div>
+          <div class="Pselection" id="diversP" onclick="setSFiltre(10); LockFilter('#diversP', 0)">PHENOMENES DIVER</div>
+          <div class="Pselection" id="tout" onclick="setSFiltre(11); LockFilter('#tout', 0)">TOUT</div>
         </div>
         <div id="GsousSelection">
           
@@ -85,38 +87,36 @@
       </section>
       <section id="Gaffichage">
         <div class="ImgText">
-          <img class="ImgGal" id="image0" src="" alt="">
+          <img class="ImgGal" id="image0" src="" alt="" onclick="FocusImg('#image0')">
           <p class="TextGal" id="desc0"></p>
         </div>
         <div class="ImgText">
-          <img class="ImgGal" id="image1" src="" alt="">
+          <img class="ImgGal" id="image1" src="" alt="" onclick="FocusImg('#image1')">
           <p class="TextGal" id="desc1"></p>
         </div>
         <div class="ImgText">
-          <img class="ImgGal" id="image2" src="" alt="">
+          <img class="ImgGal" id="image2" src="" alt="" onclick="FocusImg('#image2')">
           <p class="TextGal" id="desc2"></p>
         </div>
         <div class="ImgText">
-          <img class="ImgGal" id="image3" src="" alt="">
+          <img class="ImgGal" id="image3" src="" alt="" onclick="FocusImg('#image3')">
           <p class="TextGal" id="desc3"></p>
         </div>
         <div class="ImgText">
-          <img class="ImgGal" id="image4" src="" alt="">
+          <img class="ImgGal" id="image4" src="" alt="" onclick="FocusImg('#image4')">
           <p class="TextGal" id="desc4"></p>
         </div>
         <div class="ImgText">
-          <img class="ImgGal" id="image5" src="" alt="">
+          <img class="ImgGal" id="image5" src="" alt="" onclick="FocusImg('#image5')">
           <p class="TextGal" id="desc5"></p>
-        </div>
-      </section>
+        </div>      </section>
       <section id="GpageSel">
         
       </section>
   </main>
-
   <footer>
       <div class="elementFooter">
-          <a href="https://www.instagram.com/observatoirederouen/" rel="noreferrer noopener" target="_bank"><img src="images/LogoInstaWhite.png" alt="Logo Instagram"/></a>
+          <a href="https://www.instagram.com/observatoirederouen/" target="_bank"><img src="images/Logo/LogoInstaWhite.png" alt="Logo Instagram"/></a>
       </div>
       <div class="elementFooter">
           <h3>
@@ -125,12 +125,13 @@
           <a class="docu" href="http://astrosurf.com/obsrouen/demandededons.doc"><p>Avec dons déductibles d'impots</p></a>
       </div>
       <div class="elementFooter" id="contact">
-          <a class="docu" href="NousContacter.html">Nous contacter : </a>
-              
+          <p>Nous contacter : <br>
+              0235880196<br>
+              <a id="email" href="mailto:obs.rouen@club-internet.fr">obs.rouen@club-internet.fr</a>
+
+          </p>
       </div>
   </footer>
-
   <script src="JS/galeriescript.js"></script>
-
 </body>
 </html>
