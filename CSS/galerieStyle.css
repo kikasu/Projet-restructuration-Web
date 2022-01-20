@@ -1,0 +1,145 @@
+/*CLASS*/
+.Pselection{
+    margin: 10px;
+    padding: 10px;
+    min-width: 110px;
+    max-width: 180px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+.ImgText{
+    margin: 10px;
+    max-height: 100%;
+    background-color: rgba(255, 255, 255, 0.2);
+
+}
+.ImgGal{
+    object-fit: contain;
+    height: 60%;
+}
+.TextGal{
+    height: 30%;
+    padding: 5px;
+    overflow: auto;
+    scrollbar-width: thin;
+}
+.TextGal::-webkit-scrollbar{
+    width: 5px;
+    background-color: black;
+}
+.TextGal::-webkit-scrollbar-thumb{
+    background-color: white;
+}
+.PagesButtons{
+    height: 50px;
+    width: 50px;
+    background-color: #101025;
+    border-radius: 20px;
+    border: none;
+    color: white;
+}
+.Sselection{
+    white-space: nowrap;
+    margin: 10px;
+    padding: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+/*Image full screen*/
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+#GalerieModal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background-color: rgba(0, 0, 0, 0.7); /* Black w/ opacity */
+}
+
+/* ID*/
+#Gaffichage{
+    display: grid;
+    grid-template-columns: repeat(3, 3fr);
+    grid-template-rows: repeat(2, 400px);
+    background-color: rgba(255, 255, 255, 0.2)
+}
+#Gaffichage div img{
+    width: 100%;
+}
+#GPSelection{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: rgba(255, 255, 255, 0.2)
+}
+#GpageSel{
+    display: flex;
+    justify-content: center;
+}
+#GsousSelection{
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: auto;
+    margin-top: 3px;
+    background-color: rgba(255, 255, 255, 0.2);
+    scrollbar-width: thin;
+}
+#GsousSelection::-webkit-scrollbar{
+    height: 5px;
+    width: 8px;
+    background-color: black;
+}
+#GsousSelection::-webkit-scrollbar-thumb{
+    background-color: white;
+}
+
+
+/*CONTEXT*/
+.Pselection:hover{
+    text-decoration: underline;
+}
+.PagesButtons:hover{
+    background-color: white;
+    color: black;
+}
+.Sselection:hover{
+    text-decoration: underline;
+}
+
+@media(max-width: 620px){
+    #Gaffichage{
+        grid-template-columns: repeat(2, 2fr);
+        grid-template-rows: repeat(3, 400px);
+    }
+    #GPSelection{
+        overflow: auto;
+        max-height: 250px;
+        scrollbar-width: thin;
+    }
+}
+@media(max-width: 470px){
+    #Gaffichage{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6, 400px);
+    }  
+}

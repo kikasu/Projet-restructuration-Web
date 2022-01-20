@@ -39,7 +39,7 @@ section article {
     width: 100%;
 
     background-repeat: no-repeat;
-    background-image: url("../img/noImg.gif");
+    background-image: url("../images/noImg.gif");
     background-size: 80%;
     background-position: center;
 }

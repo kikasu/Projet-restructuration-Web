@@ -1,0 +1,17 @@
+#mainLiens{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.liensSec{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 50px;
+    padding: 10px;
+    max-width: 400px;
+    min-width: 200px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    border: 3px, white,solid;
+}
