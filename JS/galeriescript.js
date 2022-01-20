@@ -163,16 +163,16 @@ function setSFiltre(filtreP)
 function setPageSelector()
 {   
     let inHtml = ''
-    if(filtredImg.length >= 5)
+    if(filtredImg.length >= 6)
     {
         
         let numbrePage = numOfPage();
-        inHtml = '<button class="PagesButtons" id="pagePlus" onclick="affichage(page + 1)"><</button>';
+        inHtml = '<button class="PagesButtons" id="pageMoin" onclick="affichage(page - 1)"><</button>';
         for(let i = 0; i < numbrePage; i++)
         {
-            inHtml += '<button class="PagesButtons" id="page"'+i+' onclick="affichage('+i+')">' + (i + 1) +'</button>'
+            inHtml += '<button class="PagesButtons" id="page'+i+'" onclick="affichage('+i+')">' + (i + 1) +'</button>'
         }
-        inHtml+= '<button class="PagesButtons" id="pageMoin" onclick="affichage(page - 1);">></button>';
+        inHtml+= '<button class="PagesButtons" id="pagePlus" onclick="affichage(page + 1);">></button>';
     }
     document.querySelector('#GpageSel').innerHTML = inHtml;
     affichage(0)
@@ -191,9 +191,8 @@ function affichage(numP)
         let descPointer = '#desc' + i;
         if(i + n < filtredImg.length)
         {
-            console.log(i + n);
             document.querySelector(imgPointer).style.display = "block";
-            document.querySelector(imgPointer).src = "rsc/image/galerie/" + filtredImg[i + n][1];
+            document.querySelector(imgPointer).src = "images/galerie/" + filtredImg[i + n][1];
             document.querySelector(descPointer).innerHTML = filtredImg[i + n][0];
         }
         else
@@ -203,7 +202,23 @@ function affichage(numP)
             document.querySelector(descPointer).innerHTML ="";
         }
     }
+    pageSelected(numP);
     page = numP;
+}
+function pageSelected(nump)
+{
+    let idPage = "#page" + page;
+    try
+    {
+        document.querySelector(idPage).style.textDecoration = 'none';
+    }
+    catch(e){}
+    idPage = "#page" + nump;
+    try
+    {
+        document.querySelector(idPage).style.textDecoration = 'underline';  
+    }
+    catch(e){}
 }
 function numOfPage()
 {
