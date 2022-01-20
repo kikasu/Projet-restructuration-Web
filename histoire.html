@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="fr">
     <head>
         <meta name="referrer" content="origin">
         <meta charset="utf-8" />
@@ -8,7 +8,6 @@
 
         <link rel="stylesheet" href="CSS/commun.css"/>
         <link rel="stylesheet" href="./rsc-P-H/style_h.css"/>
-        <link rel="icon" href="./images/logo/logo.png"/>
 
         <script src="./rsc-P-H/script.js" defer></script>
 
@@ -19,60 +18,60 @@
     <body>
          <!--DÉBUT HEADER-->
 
-	<header>
-        <ul id="menu-demo2">
-            <li><a href="#"><img id="logoMenu" src="images/LogoMenuWhite.png"></a>
-                <ul>
-                    <li><a href="index.html">Accueil</a></li>
-                    <li><a href="presentation.html">Présentation</a></li>
-                    <li><a href="Galerie.html">Galerie</a></li>
-                    <li><a href="NousContacter.html">Nous contacter</a></li>
-                    <li><a href="histoire.html">Histoire</a></li>
-                </ul>
-            </li>
-        </ul>    
+	    <header>
+            <ul id="menu-demo2">
+                <li><a href="#"><img id="logoMenu" src="images/LogoMenuWhite.png"></a>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="presentation.html">Présentation</a></li>
+                        <li><a href="Galerie.html">Galerie</a></li>
+                        <li><a href="NousContacter.html">Nous contacter</a></li>
+                        <li><a href="histoire.html">Histoire</a></li>
+                    </ul>
+                </li>
+            </ul>    
 
-        </img>
+            </img>
 
-            <a href="index.html"><img id="logo" src="images/Logo.png"></a>
+                <a href="index.html"><img id="logo" src="images/Logo.png"></a>
 
-        <nav>
-            <div class="deroulant">
-            <button class="bouton">L'observatoire</button>
+            <nav>
+                <div class="deroulant">
+                <button class="bouton">L'observatoire</button>
 
-            <div class="contenu-bouton">
-                <a href="index.html">Accueil</a>
-                <a href="presentation.html">Présentation</a>
-                <a href="histoire.html">Histoire</a>
-            </div>
-            </div>
+                <div class="contenu-bouton">
+                    <a href="index.html">Accueil</a>
+                    <a href="presentation.html">Présentation</a>
+                    <a href="histoire.html">Histoire</a>
+                </div>
+                </div>
 
-            <div class="deroulant">
-            <button class="bouton">Les Activités</button>
-            <div class="contenu-bouton">
+                <div class="deroulant">
+                <button class="bouton">Les Activités</button>
+                <div class="contenu-bouton">
+                    
+                    <a href="Galerie.html">Galerie</a>
+                    
+                </div>
+                </div>
+
+            <div class="deroulant" id="contacts">
+                <button class="bouton">Nous Contacter</button>
+
+                <div class="contenu-bouton">
+                    <a href="NousContacter.html">Nous contacter</a>
                 
-                <a href="Galerie.html">Galerie</a>
+                <a href="#">Liens</a>
+                </div>
+                </div>
                 
-            </div>
-            </div>
-
-        <div class="deroulant" id="contacts">
-            <button class="bouton">Nous Contacter</button>
-
-            <div class="contenu-bouton">
-                <a href="NousContacter.html">Nous contacter</a>
-               
-            <a href="#">Liens</a>
-            </div>
-            </div>
-            
-        </nav>
-            
-            <div>
-                <h2 id="indicateur">Histoire</h2>
-            </div>
-      
-    </header>
+            </nav>
+                
+                <div>
+                    <h2 id="indicateur">Histoire</h2>
+                </div>
+        
+        </header>
 
      <!--FIN HEADER-->
 
@@ -92,26 +91,52 @@
                         fixe sur pellicule des phénomènes célestes exceptionnels comme le passage de "la comète de Halley", 
                         "l'éclipse perlée du 17 avril 1912" ou "la comète Morehouse(1908c)".
                     </p>
-                    <div id="caron_photos">
-                        <img onclick="slide_photo_caron(0)" src="./rsc-P-H/h.2.0-slide-halley1910.jpg" alt="Comète de Halley - 30 Juin 1910"/>
-                        <img onclick="slide_photo_caron(1)" src="./rsc-P-H/h.2.1-slide-eclipse1912.jpg" alt="Eclipse perlée - 17 Avril 1912 - #1"/>
-                        <img onclick="slide_photo_caron(2)" src="./rsc-P-H/h.2.2-slide-eclipse1912.jpg" alt="Eclipse perlée - 17 Avril 1912 - #2"/>
-                        <img onclick="slide_photo_caron(3)" src="./rsc-P-H/h.2.3-slide-cometemorehouse.png" alt="Comète Morehouse(1908c) - 1908"/>
+                    <div class="allContainer">
+                        <div class="container">
+                            <div class="carousel">
+                                <input type="radio" name="slides" checked="checked" id="slide-1">
+                                <input type="radio" name="slides" id="slide-2">
+            
+                                <ul class="carousel__slides">
+                                    <li class="carousel__slide">
+                                        <figure><div><img src="./rsc-P-H/h.2.0-slide-cometemorehouse.png" alt=" Morehouse de 1908"></div>
+
+                                            <figcaption><h3>1. Comète Morehouse de 1908</h3>
+                                                <h3>& Comète Halley de 1910</h3>
+
+                                                <img src="./rsc-P-H/h.2.1-slide-halley1910.jpg" alt="Comète Halley de 1910">
+                                                <p>
+                                                    <span class="credit">Photographie par M. Georges Caron</span>
+                                                </p>
+                                            </figcaption>
+                                        </figure>
+                                    </li>
+                                    <li class="carousel__slide">
+                                        <figure><div><img src="./rsc-P-H/h.2.2-slide-eclipse1912.jpg" alt="Eclipse de 1912 Img.1"></div>
+            
+                                            <figcaption><h3>2. Eclipse de 1912</h3>
+
+                                                <img src="./rsc-P-H/h.2.3-slide-eclipse1912.jpg" alt="Eclipse de 1912 Img.2">
+                                                <p>
+                                                    <span class="credit">Photographie par M. Georges Caron</span>
+                                                </p>
+                                            </figcaption>
+                                        </figure>
+                                    </li>
+                                </ul>
+            
+                                <ul class="carousel__thumbnails">
+                                    <li><label for="slide-1">
+                                        <img src="./rsc-P-H/h.2.1-slide-halley1910.jpg" alt=""></label>
+                                    </li>
+                                    <li><label for="slide-2">
+                                        <img src="./rsc-P-H/h.2.3-slide-eclipse1912.jpg" alt=""></label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </article>
-                <div class="slide" id="slide_photo_caron">
-                    <div>
-                        <button class="prec_arrow" onclick="slide_photo_caron('<')">
-                            <img src="./images/arrow.png" alt="Precedent"/>
-                        </button>
-
-                        <img id="slide_photo_caron_img" onclick="slide_photo_caron()" src="" alt=""/>
-
-                        <button class="next_arrow" onclick="slide_photo_caron('>')">
-                            <img src="./images/arrow.png" alt="Suivant"/>
-                        </button>
-                    </div>
-                </div>
 
                 <div class="static">
                     <div>
@@ -125,35 +150,123 @@
             <section>
                 <article>
                     <h2>
-                        Voici un article de cette époque conservé dans 
-                        les archives de l'Observatoire de Harvard aux Etats-Unis:
+                        Voici un article de cette époque conservé dans les archives de l'Observatoire de Harvard aux Etats-Unis:
                     </h2>
-                </article>
+                    <div class="allContainer">
+                        <div class="container">
+                            <div class="carousel">
+                                <input type="radio" name="slides" checked="checked" id="slide-archive-1">
+                                <input type="radio" name="slides" id="slide-archive-2">
+                                <input type="radio" name="slides" id="slide-archive-3">
+                                <input type="radio" name="slides" id="slide-archive-4">
+                                <input type="radio" name="slides" id="slide-archive-5">
+                                <input type="radio" name="slides" id="slide-archive-6">
+                                <input type="radio" name="slides" id="slide-archive-7">
+                                <input type="radio" name="slides" id="slide-archive-8">
+                                <input type="radio" name="slides" id="slide-archive-9">
 
-                <div class="slide">
-                    <div>
-                        <button class="prec_arrow" onclick="doSlide('h_slide_arc-0')">
-                            <img src="./img/arrow.png" alt="Precedent"/>
-                        </button>
+                                <ul class="carousel__slides">
+                                    <li class="carousel__slide">
+                                        <figure><figcaption><h3>Journal page 67-68</h3>
 
-                        <img src="" alt=""/>
+                                                <img src="./rsc-P-H/h.3.0-slide-archive-Harvard-p67.jpg" alt="">
+                                                <!-- <h4>Observatoires Populaires & Privés</h4>
+                                                <p>Mesdames, Messieurs,</p> -->
+                                                <p>
+                                                    <!-- Parmis les nombreux observateurs que comprend la Société Astronomique, la plupart envoient régulièrement un résumé de leurs travaux à nos séances mensuelles.
+                                                    Notre bulletin les signale tous; il publie les plus intéressants lorsque la place le lui permet.
+                                                    Mais à côté de ces observateurs il en est d'autres qui travaillent en silence et qui ne donne jamais signe de vie.
+                                                    M. Touchet à émis dernièrement l'idée de voir le bulletin leur consacrer de temps à autre quelques pages;
+                                                    M. Flammarion l'a approuvé et j'ai pensé qu'il serait intéressant de faire une étude sur les observatoires populaires et privés de nos collègues.
+                                                    Ce sera double profit pour les Membres de notre Association, car ils auront connaissance de travaux inédits et fort intéressants et en second lieu ils verront quel admirable parti on peut tirer en astronomie de faibles ressources.
+                                                    Je commencerai ce soir mon étude par l'observatoire populaire de Rouen et l'observatoire Caron, de Lillebonne, qui me sont particulièrement connus.
+                                                    Cette causerie me permettera de rendre hommage à l'un de nos Membres fondateurs les plus sympathiques, à M. Ludovic Gully, directeur de l'observatoire populaire de Rouen. -->
+                                                    <span class="credit">Archives de l'Observatoire de Harvard (US)</span>
+                                                </p>
+                                            </figcaption>
 
-                        <button class="next_arrow" onclick="doSlide('h_slide_arc-1')">
-                            <img src="./img/arrow.png" alt="Suivant"/>
-                        </button>
+                                            <div>
+                                                <img src="./rsc-P-H/h.3.1-slide-archive-Harvard-p68.jpg" alt="">
+                                            </div>
+                                        </figure>
+                                    </li>
+                                    <li class="carousel__slide">
+                                        <figure><figcaption><h3>Journal page 69-70</h3>
+
+                                                <img src="./rsc-P-H/h.3.2-slide-archive-Harvard-p69.jpg" alt="">
+                                                <p>
+                                                    <span class="credit">Archives de l'Observatoire de Harvard (US)</span>
+                                                </p>
+                                            </figcaption>
+
+                                            <div>
+                                                <img src="./rsc-P-H/h.3.3-slide-archive-Harvard-p70.jpg" alt="">
+                                            </div>
+                                        </figure>
+                                    </li>
+                                    <li class="carousel__slide">
+                                        <figure><figcaption><h3>Journal page 71-72</h3>
+
+                                                <img src="./rsc-P-H/h.3.4-slide-archive-Harvard-p71.jpg" alt="">
+                                                <p>
+                                                    <span class="credit">Archives de l'Observatoire de Harvard (US)</span>
+                                                </p>
+                                            </figcaption>
+
+                                            <div>
+                                                <img src="./rsc-P-H/h.3.5-slide-archive-Harvard-p72.jpg" alt="">
+                                            </div>
+                                        </figure>
+                                    </li>
+                                    <li class="carousel__slide">
+                                        <figure><figcaption><h3>Journal page 73-74</h3>
+
+                                                <img src="./rsc-P-H/h.3.6-slide-archive-Harvard-p73.jpg" alt="">
+                                                <p>
+                                                    <span class="credit">Archives de l'Observatoire de Harvard (US)</span>
+                                                </p>
+                                            </figcaption>
+
+                                            <div>
+                                                <img src="./rsc-P-H/h.3.7-slide-archive-Harvard-p74.jpg" alt="">
+                                            </div>
+                                        </figure>
+                                    </li>
+                                    <li class="carousel__slide">
+                                        <figure><figcaption><h3>9. Journal page 75</h3>
+
+                                                <img src="./rsc-P-H/h.3.8-slide-archive-Harvard-p75.jpg" alt="">
+                                                <p>
+                                                    <span class="credit">Archives de l'Observatoire de Harvard (US)</span>
+                                                </p>
+                                            </figcaption>
+
+                                            <div></div>
+                                        </figure>
+                                    </li>
+                                </ul>
+            
+                                <ul class="carousel__thumbnails">
+                                    <li><label for="slide-archive-1">
+                                        <img src="./rsc-P-H/h.3.0-slide-archive-Harvard-p67.jpg" alt="Archive Observatoire Harvard - Journal page 67"></label>
+                                    </li>
+                                    <li><label for="slide-archive-2">
+                                        <img src="./rsc-P-H/h.3.1-slide-archive-Harvard-p68.jpg" alt="Archive Observatoire Harvard - Journal page 68"></label>
+                                    </li>
+                                    <li><label for="slide-archive-3">
+                                        <img src="./rsc-P-H/h.3.2-slide-archive-Harvard-p69.jpg" alt="Archive Observatoire Harvard - Journal page 69"></label>
+                                    </li>
+                                    <li><label for="slide-archive-4">
+                                        <img src="./rsc-P-H/h.3.3-slide-archive-Harvard-p70.jpg" alt="Archive Observatoire Harvard - Journal page 70"></label>
+                                    </li>
+                                    <li><label for="slide-archive-5">
+                                        <img src="./rsc-P-H/h.3.4-slide-archive-Harvard-p71.jpg" alt="Archive Observatoire Harvard - Journal page 71"></label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
-
-                    <p id="h_slide_arc_text">Err.</p>
-                </div>
-                <!-- <img src="" alt="Archive Observatoire Harvard - Journal page 67"/>
-                <img src="" alt="Archive Observatoire Harvard - Journal page 68"/>
-                <img src="" alt="Archive Observatoire Harvard - Journal page 69"/>
-                <img src="" alt="Archive Observatoire Harvard - Journal page 70"/>
-                <img src="" alt="Archive Observatoire Harvard - Journal page 71"/>
-                <img src="" alt="Archive Observatoire Harvard - Journal page 72"/>
-                <img src="" alt="Archive Observatoire Harvard - Journal page 73"/>
-                <img src="" alt="Archive Observatoire Harvard - Journal page 74"/>
-                <img src="" alt="Archive Observatoire Harvard - Journal page 75"/> -->
+                </article>
             </section>
 
             <section>
@@ -203,7 +316,9 @@
                     <p class="sub_article">
                         Après la disparition en 1905 du fondateur Ludovic Gully, 
                         se succèdent à la présidence de l'Observatoire Messieurs:
-                        <ul>
+                    </p>
+                    <p>
+                        <ul class="list">
                             <li>Delehaye 1905-1920</li>
                             <li>Salvignac 1920-1936</li>
                             <li>Adrien Métayer 1936-1952</li>
@@ -227,7 +342,7 @@
         </main>
 
         <footer>
-            <a href="https://www.instagram.com/observatoirederouen/"  rel="noreferrer noopener" target="_bank">
+            <a href="https://www.instagram.com/observatoirederouen/"  rel="noreferrer noopener" target="bank">
                 <img src="./images/LogoInstaWhite.png" alt="Logo Instagram"/>
             </a>
             <nav>
