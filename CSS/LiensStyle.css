@@ -17,9 +17,27 @@
 }
 
 .LinkLiens{
+    margin-bottom: 20px;
     color: white;
 }
 
 .LinkLiens:hover{
-    color: goldenrod;
+    color: black;
+}
+html{
+    height: 100%;
+}
+body{
+    height: 100%;
+}
+footer{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+}
+@media(max-width:950px){
+    footer{
+        position: relative;
+    }
 }
