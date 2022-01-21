@@ -178,7 +178,7 @@ header nav{
 #photoFond{
   padding-top: 10px;
   margin: auto;
-  background: url('images/Accueil/fontaine-saint-marie.jpg') ;
+  background: url('images/Accueil/photoGroup.jpg') ;
   background-size: cover;
   height: 620px;
   max-width: 1200px;
@@ -348,8 +348,13 @@ header nav{
 @media(max-width: 885px){
 
   #photoFond{
-    background: url("images/Accueil/fontaine-saint-marie2.jpg");
+    background: url("images/Accueil/photoGroup.jpg");
     background-size: cover;
+  }
+  #txtPresentation{
+    font-size: 12px;
+    line-height: 25px;
+    background-color: rgba(0, 0, 0, 0.363);
   }
 
   #compartimentIMRD{
@@ -867,17 +872,13 @@ main{
 
 
     
-    /*DÉBUT FOOTER*//*DÉBUT FOOTER*//*DÉBUT FOOTER*//*DÉBUT FOOTER*//*DÉBUT FOOTER*//*DÉBUT FOOTER*//*DÉBUT FOOTER*//*DÉBUT FOOTER*//*DÉBUT FOOTER*/
-    /*DÉBUT FOOTER*//*DÉBUT FOOTER*//*DÉBUT FOOTER*//*DÉBUT FOOTER*//*DÉBUT FOOTER*//*DÉBUT FOOTER*//*DÉBUT FOOTER*//*DÉBUT FOOTER*//*DÉBUT FOOTER*/
 
   footer {
     margin: -8px;
     border-top: blanchedalmond 2px solid;
     margin-top: 60px;
-    height: 200px;
+    height: 100px;
     text-align: center;
-    height: auto;
-    width: auto;
     background-color: #fff3;
     display: flex;
     flex-flow: row nowrap;
@@ -911,9 +912,7 @@ main{
   @media(max-width: 600px){  
 
 
-  footer img{
-    width: 32px;
-  }
+  
 
   .elementFooter{
     padding-right: 5px;
@@ -941,8 +940,6 @@ main{
 
 
 
-/*FIN FOOTER*/ /*FIN FOOTER*/ /*FIN FOOTER*/ /*FIN FOOTER*/ /*FIN FOOTER*/ /*FIN FOOTER*/ /*FIN FOOTER*/ /*FIN FOOTER*/ /*FIN FOOTER*/ 
-/*FIN FOOTER*/ /*FIN FOOTER*/ /*FIN FOOTER*/ /*FIN FOOTER*/ /*FIN FOOTER*/ /*FIN FOOTER*/ /*FIN FOOTER*/ /*FIN FOOTER*/ /*FIN FOOTER*/ 
 
 @media(max-width: 800px){
 
