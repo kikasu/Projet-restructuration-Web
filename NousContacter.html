@@ -2,17 +2,17 @@
 <html>
 
 <head>
-    <meta name="referrer" content="origin">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <link rel="icon" href="./images/logo/logo.png"/>
 
-    <title>Nous contacter</title>
+    <title>Observatoire De Rouen</title>
 
     <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
 
     
-    <link href="commun.css" rel="stylesheet" type="text/css">
+    <link href="CSS/styleNousContacter.css" rel="stylesheet" type="text/css">
+
+    
 
     <!-- <META HTTP-EQUIV="Refresh" CONTENT="30; URL=https://projet-restructuration-web.geotroll.repl.co/"> -->
 
@@ -24,19 +24,19 @@
 
     <header>
         <ul id="menu-demo2">
-            <li><a href="#"><img id="logoMenu" src="images/logo/LogoMenuWhite.png"></a>
+            <li><a href="#"><img id="logoMenu" src="logo/logoMenuWhite.png"></a>
                 <ul>
                     <li><a href="index.html">Accueil</a></li>
-                    <li><a href="presentation.html">Présentation</a></li>
-                    <li><a href="Galerie.html">Galerie</a></li>
-                    <li><a href="NousContacter.html">Nous contacter</a></li>
-                    <li><a href="histoire.html">Histoire</a></li>
+                    <li><a href="#">Présentation</a></li>
+                    <li><a href="#">Galerie</a></li>
+                    <li><a href="#">Nous contacter</a></li>
                 </ul>
             </li>
         </ul>    
 
+        </img>
 
-            <a href="index.html"><img id="logo" src="images/logo/Logo.png"></a>
+            <a href="index.html"><img id="logo" src="/logo/LogoObservatoire.png"></a>
 
         <nav>
             <div class="deroulant">
@@ -44,8 +44,7 @@
 
             <div class="contenu-bouton">
                 <a href="index.html">Accueil</a>
-                <a href="presentation.html">Présentation</a>
-                <a href="histoire.html">Histoire</a>
+                <a href="#">Présentation</a>
             </div>
             </div>
 
@@ -53,7 +52,7 @@
             <button class="bouton">Les Activités</button>
             <div class="contenu-bouton">
                 
-                <a href="Galerie.html">Galerie</a>
+                <a href="#">Galerie</a>
                 
             </div>
             </div>
@@ -62,7 +61,7 @@
             <button class="bouton">Nous Contacter</button>
 
             <div class="contenu-bouton">
-                <a href="NousContacter.html">Nous contacter</a>
+                <a href="#">Nous contacter</a>
                
             <a href="#">Liens</a>
             </div>
@@ -80,12 +79,7 @@
 
     <!-- DEBUT DU MAIN -->
 
-    <main id="maincommun">
-
-            <section class="contacter" id="titre">
-              <h1>NOUS CONTACTER</h1>
-
-            </section>
+    <main>
 
             <section class="contacter" id="coordonées">
               <p>
@@ -126,60 +120,70 @@
 
             </section>
 
-            <!-- <section class="contacter" id="contact">
+            <section class="contacter" id="titre">
+              <h1>NOUS CONTACTER</h1>
+
+            </section>
+
+            <section class="contacter" id="formulaire">
+
+
+                        <!-- completer : action="---" avec la page de reception du formulaire -->
+              <form action="" method="post"> 
               
-              <sub class="contact" id="identité">
-                <div class="identité" id="nom">
-                  <label for="nom">Nom</label>
-                  <br>
-                  <input type="text" name="nom" id="" >
-                </div>
-                
-                <div class="identité" id="prenom">
-                  <label for="prenom">Prenom</label>
-                  <br>
-                  <input type="text" name="prenom" id="prenom">
-                </div>
+              <sub class="formulaire" id="identité">
+                <input type="text" name="nom" id="nom" required placeholder="NOM">
+                <span class="bar"></span>
+                <label for="nom"></label>
                 
               </sub>
-              <sub class="contact" id="email">
-                <label for="email">Email</label>
-                <br>
-                <input type="email" name="email" id="email">
+
+              <sub class="formulaire" id="email">
+                <input type="email" name="email" id="email" required placeholder="EMAIL">
+                <span class="bar"></span>
+                <label for="email"></label>
+                
               </sub>
-              <sub class="contact" id="message">
-                <label for="message">Votre Message ici</label>
-                <br>
-                <input type="text" name="message" id="message">
+
+              <sub class="formulaire" id="message">
+                <textarea placeholder="VOTRE MESSAGE ICI" name="message" id="message" required ></textarea>
+                <span class="bar"></span>
+                <label for="message"></label>
+                
               </sub>
-              <sub class="contact" id="envoyer">
-                <input type="button" value="envoyer">
+
+              <sub class="formulaire" id="envoyer">
+                <input type="submit" value="envoyer">
               </sub>
-            </section> -->
+
+            </form>
+
+            </section>
 
 
           </main>
 
     <!-- FIN DU MAIN -->
 
-   <!--DÉBUT FOOTER-->
+    <!-- DÉBUT FOOTER -->
 
-   <footer>
-    <div class="elementFooter">
-        <a href="https://www.instagram.com/observatoirederouen/" rel="noreferrer noopener" target="_bank"><img src="images/logo/LogoInstaWhite.png" alt="Logo Instagram"/></a>
-    </div>
-    <div class="elementFooter">
-        <h3 id="help">
-            Aidez-nous !
-        </h3>
-        <a id="help2" href="http://astrosurf.com/obsrouen/demandededons.doc">Avec dons déductibles d'impots</a>
-    </div>
-    <div class="elementFooter" id="contact">
-        <a class="docu" href="NousContacter.html">Nous contacter</a>
-           
-    </div>
-</footer>
+    <footer>
+        <div class="elementFooter">
+            <a href="https://www.instagram.com/observatoirederouen/" target="_bank"><img src="/logo/LogoInstaWhite.png" alt="Logo Instagram"/></a>
+        </div>
+        <div class="elementFooter">
+            <h3>
+                Aidez-nous !
+            </h3>
+            <a class="docu" href="http://astrosurf.com/obsrouen/demandededons.doc"><p>Avec dons déductibles d'impots</p></a>
+        </div>
+        <div class="elementFooter" id="contact">
+            <p>Nous contacter : <br>
+                0235880196<br>
+                <a id="email" href="mailto:obs.rouen@club-internet.fr">obs.rouen@club-internet.fr</a>
 
-<!--FIN FOOTER-->
-</body>
-</html>
+            </p>
+        </div>
+    </footer>
+
+    <!-- FIN FOOTER -->
