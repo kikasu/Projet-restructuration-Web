@@ -13,7 +13,6 @@ html{
 
 body{
   min-height: 100%;
-  position: relative;
 }
     
 
@@ -28,9 +27,9 @@ header{
     flex-flow: row nowrap;
     justify-content: space-around;
     gap: 50px;
-    height: 7.5%;
+    height: 100px;
     padding-bottom: 20px;
-    margin-top: -8px;
+    margin: -8px;
 }
     
 #logoMenu{
@@ -117,6 +116,7 @@ header nav{
 
     #indicateur{
         padding: 5px;
+        padding-top: 15px;
         border-radius: 10px;
         background-color: #fff3;
     }
@@ -418,6 +418,7 @@ header nav{
 
 #divDocu{
     display: flex;
+    flex-direction: column;
     height: auto;
     padding-left: 10px;
     padding-right: 10px;
@@ -429,18 +430,19 @@ header nav{
     background-color: rgba(117, 117, 117, 0.315);
     border-radius: 20px;
 }
-
-#docu{
-  height: auto;
+#divDocu ul{
+  padding: 0px;
 }
 
 .docuIndex{
-
-  margin-top: 20px;
   margin-bottom: 20px;
+  list-style-type: none;
 
 }
 
+#buttonEnvoyer{
+  margin: auto;
+}
 
 
 /*FIN IMRD*/
@@ -510,68 +512,68 @@ header nav{
   /*DÉBUT ARCHIVES*/  /*DÉBUT ARCHIVES*/  /*DÉBUT ARCHIVES*/  /*DÉBUT ARCHIVES*/  /*DÉBUT ARCHIVES*/  /*DÉBUT ARCHIVES*/  /*DÉBUT ARCHIVES*/
 
 
-  #Menu{
-    display: none;
-  }
+#Menu{
+display: none;
+}
 
-  #menu-demo2{
-    display: none;
-  }
-  
-
-    #presentation{
-        height: 20%;
-    }
-
-    #txtPresentation{
-        color: gainsboro;
-    }
-
-    #divPhoto{
-      display: flex;
-      justify-content: center;
-      height: 25%;
-      border: black 4px solid;
-    }
+#menu-demo2{
+display: none;
+}
 
 
-    #corps{
-        margin-top: 20px;
-        display: flex;
-        flex-flow: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 5px;
-    }
+#presentation{
+    height: 20%;
+}
 
-    .compartiment{
-        width: 40%;
-        min-width: 200px;
-        border: rgb(255, 255, 255) 3px solid;
-        border-radius: 6px;
-        margin-top: 20px;
-        margin-left: 20px;
-        margin-right: 20px;
-        padding-bottom: 20px;
-        background-color: rgba(156, 155, 155, 0.315);
-    }
+#txtPresentation{
+    color: gainsboro;
+}
+
+#divPhoto{
+  display: flex;
+  justify-content: center;
+  height: 25%;
+  border: black 4px solid;
+}
 
 
-    .docu{
-        text-align: left;
-        padding: 5px;
-        color: rgb(236, 236, 236);
-    }
+#corps{
+    margin-top: 20px;
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+}
 
-    .docu:hover{
-        color: goldenrod;
-    }
+.compartiment{
+    width: 40%;
+    min-width: 200px;
+    border: rgb(255, 255, 255) 3px solid;
+    border-radius: 6px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-bottom: 20px;
+    background-color: rgba(156, 155, 155, 0.315);
+}
 
 
-    .logoDownload{
-        height: 10px;
-        width: 10px;
-    }
+.docu{
+    text-align: left;
+    padding: 5px;
+    color: rgb(236, 236, 236);
+}
+
+.docu:hover{
+    color: goldenrod;
+}
+
+
+.logoDownload{
+    height: 10px;
+    width: 10px;
+}
 
 
 @media(max-width: 600px){
@@ -924,17 +926,7 @@ main{
   flex-direction: column;
   }
   
-  #identité {
-  display: flex;
-  border: yellow solid 2px;
-  width: 100%;
   
-  }
-  
-  .identité{
-  /* border: olive 1px solid; */
-  width: 50%;
-  }
   
   label {
   text-align: center;
@@ -946,22 +938,10 @@ main{
     border: black solid 1px;
     text-align: center;
     color: wheat;
-    width: 80%;
   }
-  
-  #email input{
-  width: 50%;
-  }
-♫
-  
-  #message input{
-  width:80%;
-  min-height: 200px;
-  max-height: 100%;
-  }
+
   
   #message{
-  border: pink solid 2px;
   margin: auto;
   width: 100%;
   }

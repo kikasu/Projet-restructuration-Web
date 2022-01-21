@@ -2,12 +2,12 @@
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    padding-top: 50px;
 }
 .liensSec{
     display: flex;
     flex-direction: column;
     text-align: center;
-    margin-top: 50px;
     padding: 10px;
     max-width: 400px;
     min-width: 200px;
@@ -30,6 +30,7 @@ html{
 body{
     height: 100%;
 }
+
 footer{
     position: absolute;
     bottom: 0px;
