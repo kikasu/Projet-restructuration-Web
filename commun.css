@@ -468,7 +468,7 @@ display: none;
     color: rgb(236, 236, 236);
 }
 
-.docu:hover{
+a:hover{
     color: goldenrod;
 }
 
