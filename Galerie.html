@@ -1,74 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Galerie</title>
-    <link rel="stylesheet" href="CSS/galerieStyle.css" type="text/css">
-    <link rel="stylesheet" href="commun.css" type="text/css">
-    <link rel="icon" href="./images/logo/logo.png"/>
-    <script src="JS/galeriescript.js" defer></script>
-</head>
-<body>
-	<header>
-    <ul id="menu-demo2">
-        <li><a href="#"><img id="logoMenu" src="images/Logo/LogoMenuWhite.png" alt="Logo Menu"></a>
-            <ul>
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="presentation.html">Présentation</a></li>
-                <li><a href="Galerie.html">Galerie</a></li>
-                <!-- <li><a href="NousContacter.html">Nous contacter</a></li> -->
-                <li><a href="histoire.html">Histoire</a></li>
-                <li><a href="Liens.html">Liens</a></li>
-            </ul>
-        </li>
-    </ul>    
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Galerie</title>
+      <link rel="stylesheet" href="CSS/galerieStyle.css" type="text/css">
+      <link rel="stylesheet" href="commun.css" type="text/css">
+      <link rel="icon" href="./images/logo/logo.png"/>
+      <script src="JS/galeriescript.js" defer></script>
+  </head>
+  <body>
+    <header>
+        <ul id="menu-demo2">
+            <li><a href="#"><img id="logoMenu" src="images/Logo/LogoMenuWhite.png" alt="Logo Menu"></a>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="presentation.html">Présentation</a></li>
+                    <li><a href="archives.html">Archives</a></li>
+                    <li><a href="Galerie.html">Galerie</a></li>
+                    <!-- <li><a href="NousContacter.html">Nous contacter</a></li> -->
+                    <li><a href="histoire.html">Histoire</a></li>
+                    <li><a href="Liens.html">Liens</a></li>
+                </ul>
+            </li>
+        </ul>    
 
-        <a href="index.html"><img id="logo" src="images/Logo/Logo.png" alt="Logo Observatoire"></a>
+            <a href="index.html"><img id="logo" src="images/Logo/Logo.png" alt="Logo Observatoire"></a>
 
-    <nav>
-        <div class="deroulant">
-        <button class="bouton">L'observatoire</button>
+        <nav>
+            <div class="deroulant">
+            <button class="bouton">L'observatoire</button>
 
-        <div class="contenu-bouton">
-            <a href="index.html">Accueil</a>
-            <a href="presentation.html">Présentation</a>
-            <a href="histoire.html">Histoire</a>
+            <div class="contenu-bouton">
+                <a href="index.html">Accueil</a>
+                <a href="presentation.html">Présentation</a>
+                <a href="histoire.html">Histoire</a>
+                
+            </div>
+            </div>
+
+            <div class="deroulant">
+            <button class="bouton">Les Activités</button>
+            <div class="contenu-bouton">
+                <a href="archives.html">Archives</a>
+                <a href="Galerie.html">Galerie</a>
+                
+            </div>
+            </div>
+
+        <div class="deroulant" id="contacts">
+            <button class="bouton">Nous Contacter</button>
+
+            <div class="contenu-bouton">
+                <a href="NousContacter.html">Nous contacter</a>
+                <a href="Liens.html">Liens</a>
+            </div>
+            </div>
             
-        </div>
-        </div>
-
-        <div class="deroulant">
-        <button class="bouton">Les Activités</button>
-        <div class="contenu-bouton">
+        </nav>
             
-            <a href="Galerie.html">Galerie</a>
             
-        </div>
-        </div>
-
-    <div class="deroulant" id="contacts">
-        <button class="bouton">Nous Contacter</button>
-
-        <div class="contenu-bouton">
-            <a href="NousContacter.html">Nous contacter</a>
-            <a href="Liens.html">Liens</a>
-        </div>
-        </div>
-        
-    </nav>
-        
-        
-    <h2 id="indicateur">Galerie</h2>
-        
-  
-</header>
-<main id="galerie">
-    <div id="GalerieModal" class="modal">
-      <span class="close" onclick="CloseFullS()">&times;</span>
-      <img class="modal-content" id="img01">
-    </div>
+        <h2 id="indicateur">Accueil</h2>
+            
+      
+    </header>
+    <main id="galerie">
+      <div id="GalerieModal" class="modal">
+        <span class="close" onclick="CloseFullS()">&times;</span>
+        <img class="modal-content" id="img01">
+      </div>
       <section id="Gselection">
         <div id="GPSelection">
           <div class="Pselection" id="soleil" onclick="setSFiltre(0); LockFilter('#soleil', 0) ">SOLEIL</div>
@@ -116,26 +117,26 @@
       <section id="GpageSel">
         
       </section>
-  </main>
-  <!--DÉBUT FOOTER-->
+    </main>
+    <!--DÉBUT FOOTER-->
 
-  <footer>
-    <div class="elementFooter">
-        <a href="https://www.instagram.com/observatoirederouen/" rel="noreferrer noopener" target="_blank"><img src="images/logo/LogoInstaWhite.png" alt="Logo Instagram"/></a>
-    </div>
-    <div class="elementFooter">
-        <h3 id="help">
-            Aidez-nous !
-        </h3>
-        <a id="help2" href="http://astrosurf.com/obsrouen/demandededons.doc">Avec dons déductibles d'impots</a>
-    </div>
-    <div class="elementFooter" id="contact">
-        <a class="docu" href="NousContacter.html">Nous contacter</a>
-           
-    </div>
-</footer>
+    <footer>
+      <div class="elementFooter">
+          <a href="https://www.instagram.com/observatoirederouen/" rel="noreferrer noopener" target="_blank"><img src="images/logo/LogoInstaWhite.png" alt="Logo Instagram"/></a>
+      </div>
+      <div class="elementFooter">
+          <h3 id="help">
+              Aidez-nous !
+          </h3>
+          <a id="help2" href="http://astrosurf.com/obsrouen/demandededons.doc">Avec dons déductibles d'impots</a>
+      </div>
+      <div class="elementFooter" id="contact">
+          <a class="docu" href="NousContacter.html">Nous contacter</a>
+            
+      </div>
+    </footer>
 
-<!--FIN FOOTER-->
-  
-</body>
+  <!--FIN FOOTER-->
+    
+  </body>
 </html>
